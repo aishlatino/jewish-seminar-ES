@@ -62,7 +62,7 @@ const styles = `
   }
 `;
 
-// --- DATOS DEL CONTENIDO (TEXTO COMPLETO FIEL AL ORIGINAL) ---
+// --- DATOS DEL CONTENIDO (TEXTO COMPLETO FIEL AL ORIGINAL + 1 PREGUNTA POR SECCIÓN) ---
 const contentData = [
     {
         id: 1,
@@ -366,7 +366,7 @@ const contentData = [
                 options: [
                     "Porque era el monte más alto.",
                     "Porque estaba cerca de Egipto.",
-                    "Por el juego de palabras con 'Siná' (odio), indicando que allí comenzó la responsabilidad moral que genera el odio."
+                    "Por el juego de palabras con 'Siná' (odio)."
                 ],
                 correct: 2
             }
@@ -409,7 +409,7 @@ const Quiz = ({ questions, onComplete }) => {
         <div className="my-16 p-6 md:p-10 bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
             <h3 className="font-heading text-2xl mb-6 flex items-center gap-2">
                 <HelpCircle className="w-8 h-8" />
-                Preguntas de Repaso
+                Pregunta de Repaso
             </h3>
             
             <div className="space-y-8">
@@ -479,7 +479,7 @@ const DynamicText = ({ item, index }) => {
             return (
                 <div className="py-12 clear-both">
                     <div className="pl-6 border-l-8 border-black bg-white p-8 spangler-shadow transform rotate-1 hover:-rotate-1 transition-transform">
-                        <p className="font-serif text-xl md:text-2xl italic leading-relaxed text-gray-800">
+                        <p className="font-serif text-2xl md:text-3xl italic leading-relaxed text-gray-800">
                             {item.icon && item.icon} "{item.content}"
                         </p>
                     </div>
@@ -488,7 +488,7 @@ const DynamicText = ({ item, index }) => {
         case 'highlight':
             return (
                 <div className="py-12 text-center clear-both relative z-10">
-                    <p className="font-heading text-2xl md:text-4xl leading-tight inline-block bg-yellow-300 px-6 py-4 decoration-clone shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] border-3 border-black transform rotate-2">
+                    <p className="font-heading text-3xl md:text-5xl leading-tight inline-block bg-yellow-300 px-6 py-4 decoration-clone shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] border-3 border-black transform rotate-2">
                         {item.content}
                     </p>
                 </div>
@@ -498,7 +498,7 @@ const DynamicText = ({ item, index }) => {
                 <div className="py-10 clear-both">
                     <div className="flex items-start gap-4 bg-gray-100 p-6 border-2 border-black border-dashed rounded-xl transform -rotate-1 hover:rotate-0 transition-transform">
                         <div className="min-w-[30px] mt-1 text-3xl">👉</div>
-                        <p className="font-marker text-xl text-gray-800 leading-relaxed">{item.content}</p>
+                        <p className="font-marker text-2xl text-gray-800 leading-relaxed">{item.content}</p>
                     </div>
                 </div>
             );
@@ -511,7 +511,7 @@ const DynamicText = ({ item, index }) => {
                             {item.title}
                         </div>
                         
-                        <div className="font-serif text-lg md:text-xl leading-relaxed text-gray-900 space-y-4">
+                        <div className="font-serif text-xl md:text-2xl leading-relaxed text-gray-900 space-y-4">
                             {item.content.map((paragraph, i) => (
                                 <p key={i}>{paragraph}</p>
                             ))}
@@ -524,7 +524,7 @@ const DynamicText = ({ item, index }) => {
                 <div className="py-10 clear-both">
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {item.items.map((li, i) => (
-                            <li key={i} className="bg-black text-white p-4 font-bold font-heading uppercase text-center spangler-shadow transform hover:-translate-y-1 transition-transform flex items-center justify-center text-center">
+                            <li key={i} className="bg-black text-white p-4 font-bold font-heading uppercase text-center spangler-shadow transform hover:-translate-y-1 transition-transform flex items-center justify-center text-center text-xl">
                                 {li}
                             </li>
                         ))}
@@ -542,7 +542,7 @@ const DynamicText = ({ item, index }) => {
         case 'intro':
             return (
                 <div className="mb-12 mt-4 clear-both">
-                    <p className="text-2xl md:text-4xl font-bold font-body leading-tight border-l-8 border-black pl-6 py-2">
+                    <p className="text-3xl md:text-5xl font-bold font-body leading-tight border-l-8 border-black pl-6 py-2">
                         {item.content}
                     </p>
                 </div>
@@ -550,7 +550,7 @@ const DynamicText = ({ item, index }) => {
         default:
             return (
                 <div className={`mb-10 ${margin} clear-both`}>
-                    <p className="text-xl font-medium font-body leading-loose text-gray-900 max-w-prose">
+                    <p className="text-2xl font-medium font-body leading-loose text-gray-900 max-w-prose">
                         {item.content}
                     </p>
                 </div>
