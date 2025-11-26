@@ -106,10 +106,10 @@ const contentData = [
                 question: "¿Cuál es la diferencia clave entre una causa y una excusa según el texto?",
                 options: [
                     "Las causas son siempre económicas, las excusas son sociales.",
-                    "Las excusas son mentiras, las causas son verdades a medias.",
-                    "Si quitas la causa, el efecto desaparece. Si quitas la excusa, el efecto persiste."
+                    "Si quitas la causa, el efecto desaparece. Si quitas la excusa, el efecto persiste.",
+                    "Las excusas son mentiras, las causas son verdades a medias."
                 ],
-                correct: 2
+                correct: 1
             }
         ]
     },
@@ -221,13 +221,13 @@ const contentData = [
         ],
         quiz: [
             {
-                question: "Cuando los judíos alemanes dejaron de llamarse 'Pueblo Elegido' y se asimilaron, ¿qué sucedió?",
+                question: "¿Por qué los enanos o ciclistas no sirven como 'chivos expiatorios' efectivos?",
                 options: [
-                    "El antisemitismo desapareció inmediatamente.",
-                    "Fueron aceptados completamente en la sociedad.",
-                    "Sufrieron la forma más violenta de antisemitismo."
+                    "Porque no existe un odio preexistente hacia ellos en la sociedad.",
+                    "Porque son grupos muy pequeños.",
+                    "Porque no tienen suficiente poder político."
                 ],
-                correct: 2
+                correct: 0
             }
         ]
     },
@@ -273,10 +273,10 @@ const contentData = [
                 question: "¿Por qué la asimilación no funcionó para detener el antisemitismo?",
                 options: [
                     "Porque los judíos no se asimilaron lo suficiente.",
-                    "Porque perdieron su identidad cultural.",
-                    "Porque el nazismo los odiaba precisamente por tratar de ser 'como ellos'."
+                    "Porque el nazismo los odiaba precisamente por tratar de ser 'como ellos'.",
+                    "Porque perdieron su identidad cultural."
                 ],
-                correct: 2
+                correct: 1
             }
         ]
     },
@@ -316,10 +316,10 @@ const contentData = [
                 question: "¿Qué elemento consideraba Hitler que los judíos introdujeron al mundo y él quería eliminar?",
                 options: [
                     "El sistema bancario.",
-                    "El arte moderno.",
-                    "La conciencia y la moralidad."
+                    "La conciencia y la moralidad.",
+                    "El arte moderno."
                 ],
-                correct: 2
+                correct: 1
             }
         ]
     },
@@ -362,17 +362,27 @@ const contentData = [
         ],
         quiz: [
             {
-                question: "Según el Talmud, ¿por qué la Torá fue entregada en el Monte Sinaí?",
+                question: "¿Cuál es la solución definitiva al antisemitismo según la conclusión?",
                 options: [
-                    "Porque era el monte más alto.",
-                    "Porque estaba cerca de Egipto.",
-                    "Por el juego de palabras con 'Siná' (odio)."
+                    "La asimilación total.",
+                    "La educación judía y compartir el mensaje de ética y moralidad.",
+                    "La fuerza militar."
                 ],
-                correct: 2
+                correct: 1
             }
         ]
     }
 ];
+
+// --- PROGRESS BAR COMPONENT ---
+const ProgressBar = ({ progress }) => (
+    <div className="fixed top-0 left-0 w-full h-2 bg-gray-200 z-50">
+        <div 
+            className="h-full bg-black transition-all duration-500 ease-out"
+            style={{ width: `${progress}%` }}
+        />
+    </div>
+);
 
 // --- COMPONENTE DE QUIZ ---
 const Quiz = ({ questions, onComplete }) => {
@@ -415,7 +425,7 @@ const Quiz = ({ questions, onComplete }) => {
             <div className="space-y-8">
                 {questions.map((q, i) => (
                     <div key={i}>
-                        <p className="font-bold font-body text-2xl mb-4">{q.question}</p>
+                        <p className="font-bold font-body text-2xl mb-4" style={{ fontSize: '24px' }}>{q.question}</p>
                         <div className="space-y-3">
                             {q.options.map((opt, optIndex) => (
                                 <button
@@ -426,6 +436,7 @@ const Quiz = ({ questions, onComplete }) => {
                                         ? 'bg-black text-white border-black' 
                                         : 'bg-gray-50 hover:bg-gray-200 border-gray-300'
                                     }`}
+                                    style={{ fontSize: '20px' }}
                                 >
                                     {opt}
                                 </button>
@@ -457,6 +468,9 @@ const DynamicText = ({ item, index }) => {
     const rotation = index % 2 === 0 ? 'rotate-1' : '-rotate-1';
     const margin = index % 3 === 0 ? 'ml-0' : (index % 3 === 1 ? 'ml-2 md:ml-12' : 'ml-1 md:ml-6');
 
+    // ESTILO EN LÍNEA PARA FORZAR EL TAMAÑO DE FUENTE
+    const forceFontSize = { fontSize: '22px', lineHeight: '1.6' };
+
     switch (item.type) {
         case 'heading':
             return (
@@ -478,7 +492,7 @@ const DynamicText = ({ item, index }) => {
             return (
                 <div className="py-12 clear-both">
                     <div className="pl-6 border-l-8 border-black bg-white p-8 spangler-shadow transform rotate-1 hover:-rotate-1 transition-transform">
-                        <p className="font-serif text-2xl md:text-3xl italic leading-relaxed text-gray-800">
+                        <p className="font-serif text-2xl md:text-3xl italic leading-relaxed text-gray-800" style={{ fontSize: '24px' }}>
                             {item.icon && item.icon} "{item.content}"
                         </p>
                     </div>
@@ -497,7 +511,7 @@ const DynamicText = ({ item, index }) => {
                 <div className="py-10 clear-both">
                     <div className="flex items-start gap-4 bg-gray-100 p-6 border-2 border-black border-dashed rounded-xl transform -rotate-1 hover:rotate-0 transition-transform">
                         <div className="min-w-[30px] mt-1 text-3xl">👉</div>
-                        <p className="font-marker text-2xl text-gray-800 leading-relaxed">{item.content}</p>
+                        <p className="font-marker text-2xl text-gray-800 leading-relaxed" style={{ fontSize: '22px' }}>{item.content}</p>
                     </div>
                 </div>
             );
@@ -510,7 +524,7 @@ const DynamicText = ({ item, index }) => {
                         </div>
                         <div className="font-serif text-xl md:text-2xl leading-relaxed text-gray-900 space-y-4">
                             {item.content.map((paragraph, i) => (
-                                <p key={i}>{paragraph}</p>
+                                <p key={i} style={forceFontSize}>{paragraph}</p>
                             ))}
                         </div>
                     </div>
@@ -547,7 +561,7 @@ const DynamicText = ({ item, index }) => {
         default:
             return (
                 <div className={`mb-10 ${margin} clear-both`}>
-                    <p className="text-2xl font-medium font-body leading-loose text-gray-900 max-w-prose">
+                    <p className="text-2xl font-medium font-body leading-loose text-gray-900 max-w-prose" style={forceFontSize}>
                         {item.content}
                     </p>
                 </div>
@@ -595,6 +609,8 @@ const Section = ({ data, isLocked, onUnlock, sectionRef, nextSectionUnlocked }) 
                         <Quiz questions={data.quiz} onComplete={() => setQuizPassed(true)} />
                     )}
 
+                    {/* Si ya pasó el quiz o la siguiente sección ya estaba desbloqueada, mostrar el mensaje de éxito O el botón */}
+                    {/* NOTA: Este mensaje solo se muestra si ACABA de pasar el quiz y aun no avanza */}
                     {data.quiz && quizPassed && !nextSectionUnlocked && (
                          <div className="my-12 p-8 border-4 border-black bg-green-100 text-center animate-bounce">
                             <CheckCircle className="w-16 h-16 mx-auto mb-4 text-green-600" />
@@ -618,7 +634,7 @@ const Section = ({ data, isLocked, onUnlock, sectionRef, nextSectionUnlocked }) 
                         </div>
                     )}
 
-                    {!onUnlock && (
+                    {!onUnlock && quizPassed && (
                         <div className="mt-24 text-center p-8 border-t-4 border-black bg-gray-50">
                             <p className="font-heading text-xl mb-4">¡Tu viaje apenas comienza!</p>
                             <p className="font-body text-lg mb-6">Sigue descubriendo la profundidad de la sabiduría judía.</p>
@@ -684,6 +700,9 @@ const App = () => {
     const [unlockedLevel, setUnlockedLevel] = useState(0); 
     const sectionRefs = useRef([]);
 
+    // PROGRESO
+    const progress = (unlockedLevel / contentData.length) * 100;
+
     const handleNavigation = (targetLevel) => {
         if (targetLevel > unlockedLevel) {
             setUnlockedLevel(targetLevel);
@@ -710,6 +729,7 @@ const App = () => {
     return (
         <div className="font-body text-gray-900 selection:bg-pop-magenta selection:text-white">
             <style>{styles}</style>
+            <ProgressBar progress={progress} />
 
             <Hero onStart={() => handleNavigation(1)} />
 
