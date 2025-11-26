@@ -5,31 +5,9 @@ import { ChevronDown, ArrowRight, Star, Zap, Eye, X, MessageCircle, BookOpen, Mu
 const styles = `
   @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;700;900&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Permanent+Marker&display=swap');
 
-  /* FORZAR TAMAÑOS BASE */
-  html, body {
-    font-size: 18px; /* Base más grande */
+  body {
     overflow-x: hidden;
     background-color: #f0f0f0;
-  }
-
-  /* CLASES DE TEXTO FORZADAS (Anti-override) */
-  .text-force-mobile-body {
-    font-size: 22px !important;
-    line-height: 1.6 !important;
-  }
-  
-  .text-force-mobile-heading {
-    font-size: 28px !important;
-    line-height: 1.1 !important;
-  }
-
-  @media (min-width: 768px) {
-    .text-force-mobile-body {
-      font-size: 24px !important;
-    }
-    .text-force-mobile-heading {
-      font-size: 48px !important;
-    }
   }
 
   .font-heading {
@@ -421,15 +399,15 @@ const Quiz = ({ questions, onComplete }) => {
         return (
             <div className="my-12 p-8 border-4 border-black bg-green-100 text-center animate-bounce">
                 <CheckCircle className="w-16 h-16 mx-auto mb-4 text-green-600" />
-                <h3 className="font-heading text-2xl">¡Correcto!</h3>
-                <p className="font-body text-force-mobile-body">Has desbloqueado la siguiente sección.</p>
+                <h3 className="font-heading text-3xl">¡Correcto!</h3>
+                <p className="font-body text-2xl">Has desbloqueado la siguiente sección.</p>
             </div>
         );
     }
 
     return (
         <div className="my-16 p-6 md:p-10 bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-            <h3 className="font-heading text-2xl mb-6 flex items-center gap-2">
+            <h3 className="font-heading text-3xl mb-6 flex items-center gap-2">
                 <HelpCircle className="w-8 h-8" />
                 Pregunta de Repaso
             </h3>
@@ -437,13 +415,13 @@ const Quiz = ({ questions, onComplete }) => {
             <div className="space-y-8">
                 {questions.map((q, i) => (
                     <div key={i}>
-                        <p className="font-bold font-body text-force-mobile-body mb-4">{q.question}</p>
+                        <p className="font-bold font-body text-2xl mb-4">{q.question}</p>
                         <div className="space-y-3">
                             {q.options.map((opt, optIndex) => (
                                 <button
                                     key={optIndex}
                                     onClick={() => handleSelect(i, optIndex)}
-                                    className={`w-full text-left p-4 border-2 transition-all font-medium text-force-mobile-body ${
+                                    className={`w-full text-left p-4 border-2 transition-all font-medium text-xl ${
                                         answers[i] === optIndex 
                                         ? 'bg-black text-white border-black' 
                                         : 'bg-gray-50 hover:bg-gray-200 border-gray-300'
@@ -477,14 +455,13 @@ const Quiz = ({ questions, onComplete }) => {
 // --- RENDERIZADO DE TEXTO DINÁMICO ---
 const DynamicText = ({ item, index }) => {
     const rotation = index % 2 === 0 ? 'rotate-1' : '-rotate-1';
-    // Aumento de márgenes para mobile first y desktop
     const margin = index % 3 === 0 ? 'ml-0' : (index % 3 === 1 ? 'ml-2 md:ml-12' : 'ml-1 md:ml-6');
 
     switch (item.type) {
         case 'heading':
             return (
                 <div className="py-12 clear-both">
-                    <h3 className={`font-heading text-force-mobile-heading uppercase transform ${rotation} decoration-clone bg-black text-white inline-block px-4 py-2 shadow-lg`}>
+                    <h3 className={`font-heading text-3xl md:text-5xl uppercase transform ${rotation} decoration-clone bg-black text-white inline-block px-4 py-2 shadow-lg`}>
                         {item.content}
                     </h3>
                 </div>
@@ -501,7 +478,7 @@ const DynamicText = ({ item, index }) => {
             return (
                 <div className="py-12 clear-both">
                     <div className="pl-6 border-l-8 border-black bg-white p-8 spangler-shadow transform rotate-1 hover:-rotate-1 transition-transform">
-                        <p className="font-serif text-force-mobile-body italic leading-relaxed text-gray-800">
+                        <p className="font-serif text-2xl md:text-3xl italic leading-relaxed text-gray-800">
                             {item.icon && item.icon} "{item.content}"
                         </p>
                     </div>
@@ -510,7 +487,7 @@ const DynamicText = ({ item, index }) => {
         case 'highlight':
             return (
                 <div className="py-12 text-center clear-both relative z-10">
-                    <p className="font-heading text-force-mobile-heading leading-tight inline-block bg-yellow-300 px-6 py-4 decoration-clone shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] border-3 border-black transform rotate-2">
+                    <p className="font-heading text-2xl md:text-4xl leading-tight inline-block bg-yellow-300 px-6 py-4 decoration-clone shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] border-3 border-black transform rotate-2">
                         {item.content}
                     </p>
                 </div>
@@ -520,7 +497,7 @@ const DynamicText = ({ item, index }) => {
                 <div className="py-10 clear-both">
                     <div className="flex items-start gap-4 bg-gray-100 p-6 border-2 border-black border-dashed rounded-xl transform -rotate-1 hover:rotate-0 transition-transform">
                         <div className="min-w-[30px] mt-1 text-3xl">👉</div>
-                        <p className="font-marker text-force-mobile-body text-gray-800 leading-relaxed">{item.content}</p>
+                        <p className="font-marker text-2xl text-gray-800 leading-relaxed">{item.content}</p>
                     </div>
                 </div>
             );
@@ -528,12 +505,10 @@ const DynamicText = ({ item, index }) => {
             return (
                 <div className="py-16 clear-both">
                     <div className="bg-white border-4 border-black p-6 md:p-8 spangler-shadow transform rotate-1 relative">
-                        {/* Título de la historia */}
                         <div className="bg-black text-white px-4 py-1 font-heading text-lg uppercase inline-block mb-4 transform -rotate-1">
                             {item.title}
                         </div>
-                        
-                        <div className="font-serif text-force-mobile-body leading-relaxed text-gray-900 space-y-4">
+                        <div className="font-serif text-xl md:text-2xl leading-relaxed text-gray-900 space-y-4">
                             {item.content.map((paragraph, i) => (
                                 <p key={i}>{paragraph}</p>
                             ))}
@@ -546,7 +521,7 @@ const DynamicText = ({ item, index }) => {
                 <div className="py-10 clear-both">
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {item.items.map((li, i) => (
-                            <li key={i} className="bg-black text-white p-4 font-bold font-heading uppercase text-center spangler-shadow transform hover:-translate-y-1 transition-transform flex items-center justify-center text-center text-force-mobile-body">
+                            <li key={i} className="bg-black text-white p-4 font-bold font-heading uppercase text-center spangler-shadow transform hover:-translate-y-1 transition-transform flex items-center justify-center text-center text-xl">
                                 {li}
                             </li>
                         ))}
@@ -564,7 +539,7 @@ const DynamicText = ({ item, index }) => {
         case 'intro':
             return (
                 <div className="mb-12 mt-4 clear-both">
-                    <p className="text-force-mobile-heading font-bold font-body leading-tight border-l-8 border-black pl-6 py-2">
+                    <p className="text-3xl md:text-5xl font-bold font-body leading-tight border-l-8 border-black pl-6 py-2">
                         {item.content}
                     </p>
                 </div>
@@ -572,7 +547,7 @@ const DynamicText = ({ item, index }) => {
         default:
             return (
                 <div className={`mb-10 ${margin} clear-both`}>
-                    <p className="text-force-mobile-body font-medium font-body leading-loose text-gray-900 max-w-prose">
+                    <p className="text-2xl font-medium font-body leading-loose text-gray-900 max-w-prose">
                         {item.content}
                     </p>
                 </div>
@@ -594,13 +569,10 @@ const Section = ({ data, isLocked, onUnlock, sectionRef, nextSectionUnlocked }) 
     return (
         <div ref={sectionRef} className="w-full min-h-screen flex flex-col items-center py-12 md:py-24 px-4 relative">
             
-            {/* Floating Icons Background */}
             <div className="absolute top-10 left-5 opacity-20 transform -rotate-12 pointer-events-none hidden md:block">{data.icon}</div>
             <div className="absolute bottom-20 right-5 opacity-20 transform rotate-45 pointer-events-none hidden md:block">{data.icon}</div>
 
             <div className={`max-w-4xl w-full relative z-10 reveal-section`}>
-                
-                {/* Card Header */}
                 <div className="mb-16 md:mb-20 text-center">
                     <div className="inline-block bg-black text-white px-4 py-1 font-heading text-sm mb-2 transform -rotate-2">
                         SECCIÓN {data.id}
@@ -610,9 +582,7 @@ const Section = ({ data, isLocked, onUnlock, sectionRef, nextSectionUnlocked }) 
                     </h2>
                 </div>
 
-                {/* Dynamic Content */}
                 <div className="bg-white border-4 border-black p-6 md:p-16 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] relative">
-                    {/* Decorative Tape */}
                     <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-32 md:w-48 h-10 bg-gray-200/80 rotate-1 border border-gray-300 shadow-sm"></div>
 
                     <div className="space-y-2">
@@ -621,17 +591,15 @@ const Section = ({ data, isLocked, onUnlock, sectionRef, nextSectionUnlocked }) 
                         ))}
                     </div>
 
-                    {/* Quiz & Botón */}
                     {data.quiz && !nextSectionUnlocked && !quizPassed && (
                         <Quiz questions={data.quiz} onComplete={() => setQuizPassed(true)} />
                     )}
 
-                    {/* Si ya pasó el quiz o la siguiente sección ya estaba desbloqueada, mostrar el mensaje de éxito O el botón */}
                     {data.quiz && quizPassed && !nextSectionUnlocked && (
                          <div className="my-12 p-8 border-4 border-black bg-green-100 text-center animate-bounce">
                             <CheckCircle className="w-16 h-16 mx-auto mb-4 text-green-600" />
-                            <h3 className="font-heading text-2xl">¡Correcto!</h3>
-                            <p className="font-body text-lg">Has desbloqueado la siguiente sección.</p>
+                            <h3 className="font-heading text-3xl">¡Correcto!</h3>
+                            <p className="font-body text-2xl">Has desbloqueado la siguiente sección.</p>
                         </div>
                     )}
 
@@ -670,7 +638,6 @@ const Section = ({ data, isLocked, onUnlock, sectionRef, nextSectionUnlocked }) 
 const Hero = ({ onStart }) => {
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-pop-yellow relative overflow-hidden p-4 md:p-6 border-b-8 border-black">
-            {/* Collage Elements */}
             <div className="absolute top-10 right-10 w-32 h-32 bg-pop-cyan rounded-full border-4 border-black mix-blend-multiply animate-pulse hidden md:block"></div>
             <div className="absolute bottom-10 left-10 w-48 h-48 bg-pop-magenta transform rotate-45 border-4 border-black mix-blend-multiply opacity-80 hidden md:block"></div>
             
@@ -717,13 +684,10 @@ const App = () => {
     const [unlockedLevel, setUnlockedLevel] = useState(0); 
     const sectionRefs = useRef([]);
 
-    // Manejo inteligente de navegación
     const handleNavigation = (targetLevel) => {
-        // Si el nivel objetivo es nuevo (mayor al actual), lo desbloqueamos
         if (targetLevel > unlockedLevel) {
             setUnlockedLevel(targetLevel);
         } else {
-            // Si ya está desbloqueado, solo hacemos scroll
             scrollToLevel(targetLevel);
         }
     };
