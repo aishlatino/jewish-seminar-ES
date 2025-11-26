@@ -400,7 +400,7 @@ const Quiz = ({ questions, onComplete }) => {
             <div className="my-12 p-8 border-4 border-black bg-green-100 text-center animate-bounce">
                 <CheckCircle className="w-16 h-16 mx-auto mb-4 text-green-600" />
                 <h3 className="font-heading text-2xl">¡Correcto!</h3>
-                <p className="font-body">Has desbloqueado la siguiente sección.</p>
+                <p className="font-body text-lg">Has desbloqueado la siguiente sección.</p>
             </div>
         );
     }
@@ -415,13 +415,13 @@ const Quiz = ({ questions, onComplete }) => {
             <div className="space-y-8">
                 {questions.map((q, i) => (
                     <div key={i}>
-                        <p className="font-bold font-body text-lg mb-3">{i + 1}. {q.question}</p>
-                        <div className="space-y-2">
+                        <p className="font-bold font-body text-xl mb-4">{q.question}</p>
+                        <div className="space-y-3">
                             {q.options.map((opt, optIndex) => (
                                 <button
                                     key={optIndex}
                                     onClick={() => handleSelect(i, optIndex)}
-                                    className={`w-full text-left p-3 border-2 transition-all font-medium ${
+                                    className={`w-full text-left p-4 border-2 transition-all font-medium text-lg ${
                                         answers[i] === optIndex 
                                         ? 'bg-black text-white border-black' 
                                         : 'bg-gray-50 hover:bg-gray-200 border-gray-300'
@@ -438,7 +438,7 @@ const Quiz = ({ questions, onComplete }) => {
             {error && (
                 <div className="mt-6 flex items-center gap-2 text-red-600 font-bold animate-pulse">
                     <XCircle />
-                    Algunas respuestas son incorrectas. Intenta de nuevo.
+                    Respuesta incorrecta. Intenta de nuevo.
                 </div>
             )}
 
@@ -446,7 +446,7 @@ const Quiz = ({ questions, onComplete }) => {
                 onClick={checkAnswers}
                 className="mt-8 w-full bg-black text-white font-heading uppercase py-4 hover:bg-gray-800 transition-colors text-xl"
             >
-                Verificar Respuestas
+                Verificar Respuesta
             </button>
         </div>
     );
@@ -455,6 +455,7 @@ const Quiz = ({ questions, onComplete }) => {
 // --- RENDERIZADO DE TEXTO DINÁMICO ---
 const DynamicText = ({ item, index }) => {
     const rotation = index % 2 === 0 ? 'rotate-1' : '-rotate-1';
+    // Aumento de márgenes para mobile first y desktop
     const margin = index % 3 === 0 ? 'ml-0' : (index % 3 === 1 ? 'ml-2 md:ml-12' : 'ml-1 md:ml-6');
 
     switch (item.type) {
@@ -497,7 +498,7 @@ const DynamicText = ({ item, index }) => {
                 <div className="py-10 clear-both">
                     <div className="flex items-start gap-4 bg-gray-100 p-6 border-2 border-black border-dashed rounded-xl transform -rotate-1 hover:rotate-0 transition-transform">
                         <div className="min-w-[30px] mt-1 text-3xl">👉</div>
-                        <p className="font-marker text-lg md:text-xl text-gray-800 leading-relaxed">{item.content}</p>
+                        <p className="font-marker text-xl text-gray-800 leading-relaxed">{item.content}</p>
                     </div>
                 </div>
             );
@@ -549,7 +550,7 @@ const DynamicText = ({ item, index }) => {
         default:
             return (
                 <div className={`mb-10 ${margin} clear-both`}>
-                    <p className="text-lg md:text-xl font-medium font-body leading-loose text-gray-900 max-w-prose">
+                    <p className="text-xl font-medium font-body leading-loose text-gray-900 max-w-prose">
                         {item.content}
                     </p>
                 </div>
@@ -604,12 +605,11 @@ const Section = ({ data, isLocked, onUnlock, sectionRef, nextSectionUnlocked }) 
                     )}
 
                     {/* Si ya pasó el quiz o la siguiente sección ya estaba desbloqueada, mostrar el mensaje de éxito O el botón */}
-                    {/* Nota: Para mantener el mensaje de éxito visible si acaba de terminar, usamos quizPassed */}
                     {data.quiz && quizPassed && !nextSectionUnlocked && (
                          <div className="my-12 p-8 border-4 border-black bg-green-100 text-center animate-bounce">
                             <CheckCircle className="w-16 h-16 mx-auto mb-4 text-green-600" />
                             <h3 className="font-heading text-2xl">¡Correcto!</h3>
-                            <p className="font-body">Has desbloqueado la siguiente sección.</p>
+                            <p className="font-body text-lg">Has desbloqueado la siguiente sección.</p>
                         </div>
                     )}
 
@@ -630,10 +630,11 @@ const Section = ({ data, isLocked, onUnlock, sectionRef, nextSectionUnlocked }) 
 
                     {!onUnlock && (
                         <div className="mt-24 text-center p-8 border-t-4 border-black bg-gray-50">
-                            <p className="font-heading text-xl mb-4">Has completado la exploración</p>
-                            <a href="https://aishlatino.com" target="_blank" rel="noreferrer" className="group relative inline-block">
-                                <div className="relative border-2 border-black bg-white px-6 py-3 font-bold hover:bg-black hover:text-white transition-colors">
-                                    Volver a AishLatino.com
+                            <p className="font-heading text-xl mb-4">¡Tu viaje apenas comienza!</p>
+                            <p className="font-body text-lg mb-6">Sigue descubriendo la profundidad de la sabiduría judía.</p>
+                            <a href="https://aishlatino.com" target="_blank" rel="noreferrer" className="group relative inline-block w-full md:w-auto">
+                                <div className="relative border-2 border-black bg-pop-yellow px-8 py-4 font-heading text-xl hover:bg-black hover:text-white transition-colors uppercase tracking-widest">
+                                    Ir a AishLatino.com
                                 </div>
                             </a>
                         </div>
@@ -660,13 +661,12 @@ const Hero = ({ onStart }) => {
                 </div>
 
                 <h1 className="font-heading text-[12vw] md:text-[130px] leading-[0.85] mb-8 text-white drop-shadow-[4px_4px_0_rgba(0,0,0,1)] md:drop-shadow-[8px_8px_0_rgba(0,0,0,1)] text-stroke-black tracking-tighter">
-                    POR QUÉ<br/>LOS JUDÍOS
+                    EL ODIO<br/>MÁS ANTIGUO<br/>DEL MUNDO
                 </h1>
 
                 <div className="bg-black text-white inline-block px-6 py-3 transform rotate-2 mb-12">
                     <h2 className="font-heading text-lg md:text-2xl uppercase tracking-widest">
-                        Entendiendo la raiz del<br/>
-                        odio más antiguo del mundo
+                        ¿Por qué los judíos?
                     </h2>
                 </div>
 
