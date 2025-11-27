@@ -556,12 +556,12 @@ const DynamicText = ({ item, index }) => {
                 </div>
             );
         default:
-            // USANDO H4 PARA FORZAR LEGIBILIDAD VISUAL SIN COMPROMETER MUCHO LA SEMANTICA VISUAL
+            // USANDO H3 PARA FORZAR LEGIBILIDAD VISUAL
             return (
                 <div className={`mb-10 ${margin} clear-both`}>
-                    <h4 className="text-[24px] md:text-[28px] font-medium font-body leading-loose text-gray-900 max-w-prose">
+                    <h3 className="text-[26px] md:text-[32px] font-medium font-body leading-loose text-gray-900 max-w-prose">
                         {item.content}
-                    </h4>
+                    </h3>
                 </div>
             );
     }
