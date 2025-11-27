@@ -5,6 +5,7 @@ import { ChevronDown, ArrowRight, Star, Zap, Eye, X, MessageCircle, BookOpen, Mu
 const styles = `
   @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;700;900&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Permanent+Marker&display=swap');
 
+  /* Estilos globales básicos */
   body {
     overflow-x: hidden;
     background-color: #f0f0f0;
@@ -62,7 +63,7 @@ const styles = `
   }
 `;
 
-// --- DATOS DEL CONTENIDO (TEXTO COMPLETO FIEL AL ORIGINAL) ---
+// --- DATOS DEL CONTENIDO ---
 const contentData = [
     {
         id: 1,
@@ -73,7 +74,7 @@ const contentData = [
         text: [
             { type: "intro", content: "Entendiendo la raíz del odio más antiguo del mundo." },
             { type: "body", content: "Pareciera que el prejuicio es un ingrediente estándar en la vida. En su canción titulada \"Semana Nacional de Hermandad\", Tom Lehrer canta:" },
-            { type: "quote", content: "Oh los protestantes odian a los católicos,\ny los católicos odian a los protestantes,\ny los hindúes odian a los musulmanes\ny todos odian a los judíos.", icon: <Music className="w-6 h-6 inline mr-2" /> },
+            { type: "quote", content: "Oh los protestantes odian a los católicos,\ny los católicos odian a los protestantes,\ny los hindúes odian a los musulmanes\ny todos odian a los judíos.", icon: <Music className="w-8 h-8 inline mr-2" /> },
             { type: "body", content: "En esta canción, Lehrer expresa la obvia verdad de que el odio por los judíos es singularmente común. Los Cruzados, la Inquisición Española, los libelos de sangre, los pogromos, las innumerables expulsiones y el asesinato sistemático de 6 millones." },
             { type: "big-question", content: "LA PREGUNTA ES: ¿POR QUÉ?" },
             { type: "body", content: "¿Qué hay detrás de este odio milenario? ¿Por qué la corriente oculta de antisemitismo se ha inflado y ha explotado en contra de los judíos en todos lados, una y otra vez, a lo largo de toda la historia?" },
@@ -366,13 +367,23 @@ const contentData = [
                 options: [
                     "Porque era el monte más alto.",
                     "Porque estaba cerca de Egipto.",
-                    "Por el juego de palabras con 'Siná' (odio), indicando que allí comenzó la responsabilidad moral que genera el odio."
+                    "Por el juego de palabras con 'Siná' (odio)."
                 ],
                 correct: 2
             }
         ]
     }
 ];
+
+// --- PROGRESS BAR COMPONENT ---
+const ProgressBar = ({ progress }) => (
+    <div className="fixed top-0 left-0 w-full h-3 bg-gray-200 z-50 shadow-md">
+        <div 
+            className="h-full bg-pop-magenta transition-all duration-500 ease-out"
+            style={{ width: `${progress}%` }}
+        />
+    </div>
+);
 
 // --- COMPONENTE DE QUIZ ---
 const Quiz = ({ questions, onComplete }) => {
@@ -399,29 +410,29 @@ const Quiz = ({ questions, onComplete }) => {
         return (
             <div className="my-12 p-8 border-4 border-black bg-green-100 text-center animate-bounce">
                 <CheckCircle className="w-16 h-16 mx-auto mb-4 text-green-600" />
-                <h3 className="font-heading text-2xl">¡Correcto!</h3>
-                <p className="font-body text-lg">Has desbloqueado la siguiente sección.</p>
+                <h3 className="font-heading text-3xl">¡Correcto!</h3>
+                <p className="font-body text-[22px] md:text-[26px]">Has desbloqueado la siguiente sección.</p>
             </div>
         );
     }
 
     return (
         <div className="my-16 p-6 md:p-10 bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-            <h3 className="font-heading text-2xl mb-6 flex items-center gap-2">
+            <h3 className="font-heading text-3xl mb-6 flex items-center gap-2">
                 <HelpCircle className="w-8 h-8" />
-                Preguntas de Repaso
+                Pregunta de Repaso
             </h3>
             
             <div className="space-y-8">
                 {questions.map((q, i) => (
                     <div key={i}>
-                        <p className="font-bold font-body text-xl mb-4">{q.question}</p>
+                        <p className="font-bold font-body text-[24px] mb-4">{q.question}</p>
                         <div className="space-y-3">
                             {q.options.map((opt, optIndex) => (
                                 <button
                                     key={optIndex}
                                     onClick={() => handleSelect(i, optIndex)}
-                                    className={`w-full text-left p-4 border-2 transition-all font-medium text-lg ${
+                                    className={`w-full text-left p-4 border-2 transition-all font-medium text-[20px] ${
                                         answers[i] === optIndex 
                                         ? 'bg-black text-white border-black' 
                                         : 'bg-gray-50 hover:bg-gray-200 border-gray-300'
@@ -436,7 +447,7 @@ const Quiz = ({ questions, onComplete }) => {
             </div>
 
             {error && (
-                <div className="mt-6 flex items-center gap-2 text-red-600 font-bold animate-pulse">
+                <div className="mt-6 flex items-center gap-2 text-red-600 font-bold animate-pulse text-[20px]">
                     <XCircle />
                     Respuesta incorrecta. Intenta de nuevo.
                 </div>
@@ -444,7 +455,7 @@ const Quiz = ({ questions, onComplete }) => {
 
             <button 
                 onClick={checkAnswers}
-                className="mt-8 w-full bg-black text-white font-heading uppercase py-4 hover:bg-gray-800 transition-colors text-xl"
+                className="mt-8 w-full bg-black text-white font-heading uppercase py-4 hover:bg-gray-800 transition-colors text-2xl tracking-widest"
             >
                 Verificar Respuesta
             </button>
@@ -455,14 +466,13 @@ const Quiz = ({ questions, onComplete }) => {
 // --- RENDERIZADO DE TEXTO DINÁMICO ---
 const DynamicText = ({ item, index }) => {
     const rotation = index % 2 === 0 ? 'rotate-1' : '-rotate-1';
-    // Aumento de márgenes para mobile first y desktop
     const margin = index % 3 === 0 ? 'ml-0' : (index % 3 === 1 ? 'ml-2 md:ml-12' : 'ml-1 md:ml-6');
 
     switch (item.type) {
         case 'heading':
             return (
                 <div className="py-12 clear-both">
-                    <h3 className={`font-heading text-3xl md:text-5xl uppercase transform ${rotation} decoration-clone bg-black text-white inline-block px-4 py-2 shadow-lg`}>
+                    <h3 className={`font-heading text-[28px] md:text-[42px] uppercase transform ${rotation} decoration-clone bg-black text-white inline-block px-4 py-2 shadow-lg`}>
                         {item.content}
                     </h3>
                 </div>
@@ -470,7 +480,7 @@ const DynamicText = ({ item, index }) => {
         case 'big-question':
             return (
                 <div className="text-center py-24 px-4 clear-both relative z-10">
-                    <h2 className="font-heading text-4xl md:text-7xl text-transparent text-stroke-black spangler-shadow bg-white inline-block px-8 py-6 transform -rotate-3 hover:scale-105 transition-transform">
+                    <h2 className="font-heading text-[40px] md:text-[80px] text-transparent text-stroke-black spangler-shadow bg-white inline-block px-8 py-6 transform -rotate-3 hover:scale-105 transition-transform">
                         {item.content}
                     </h2>
                 </div>
@@ -479,7 +489,7 @@ const DynamicText = ({ item, index }) => {
             return (
                 <div className="py-12 clear-both">
                     <div className="pl-6 border-l-8 border-black bg-white p-8 spangler-shadow transform rotate-1 hover:-rotate-1 transition-transform">
-                        <p className="font-serif text-xl md:text-2xl italic leading-relaxed text-gray-800">
+                        <p className="font-serif text-[24px] md:text-[30px] italic leading-relaxed text-gray-800">
                             {item.icon && item.icon} "{item.content}"
                         </p>
                     </div>
@@ -488,7 +498,7 @@ const DynamicText = ({ item, index }) => {
         case 'highlight':
             return (
                 <div className="py-12 text-center clear-both relative z-10">
-                    <p className="font-heading text-2xl md:text-4xl leading-tight inline-block bg-yellow-300 px-6 py-4 decoration-clone shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] border-3 border-black transform rotate-2">
+                    <p className="font-heading text-[26px] md:text-[40px] leading-tight inline-block bg-yellow-300 px-6 py-4 decoration-clone shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] border-3 border-black transform rotate-2">
                         {item.content}
                     </p>
                 </div>
@@ -498,7 +508,7 @@ const DynamicText = ({ item, index }) => {
                 <div className="py-10 clear-both">
                     <div className="flex items-start gap-4 bg-gray-100 p-6 border-2 border-black border-dashed rounded-xl transform -rotate-1 hover:rotate-0 transition-transform">
                         <div className="min-w-[30px] mt-1 text-3xl">👉</div>
-                        <p className="font-marker text-xl text-gray-800 leading-relaxed">{item.content}</p>
+                        <p className="font-marker text-[22px] md:text-[26px] text-gray-800 leading-relaxed">{item.content}</p>
                     </div>
                 </div>
             );
@@ -506,12 +516,10 @@ const DynamicText = ({ item, index }) => {
             return (
                 <div className="py-16 clear-both">
                     <div className="bg-white border-4 border-black p-6 md:p-8 spangler-shadow transform rotate-1 relative">
-                        {/* Título de la historia */}
                         <div className="bg-black text-white px-4 py-1 font-heading text-lg uppercase inline-block mb-4 transform -rotate-1">
                             {item.title}
                         </div>
-                        
-                        <div className="font-serif text-lg md:text-xl leading-relaxed text-gray-900 space-y-4">
+                        <div className="font-serif text-[22px] md:text-[26px] leading-relaxed text-gray-900 space-y-4">
                             {item.content.map((paragraph, i) => (
                                 <p key={i}>{paragraph}</p>
                             ))}
@@ -524,7 +532,7 @@ const DynamicText = ({ item, index }) => {
                 <div className="py-10 clear-both">
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {item.items.map((li, i) => (
-                            <li key={i} className="bg-black text-white p-4 font-bold font-heading uppercase text-center spangler-shadow transform hover:-translate-y-1 transition-transform flex items-center justify-center text-center">
+                            <li key={i} className="bg-black text-white p-4 font-bold font-heading uppercase text-center spangler-shadow transform hover:-translate-y-1 transition-transform flex items-center justify-center text-center text-[20px] md:text-[24px]">
                                 {li}
                             </li>
                         ))}
@@ -534,7 +542,7 @@ const DynamicText = ({ item, index }) => {
         case 'stamp':
             return (
                 <div className="py-20 text-center clear-both">
-                    <div className="inline-block border-8 border-red-600 p-8 rounded-lg transform -rotate-12 mask-image text-red-600 font-heading text-3xl md:text-5xl uppercase opacity-90 mix-blend-multiply">
+                    <div className="inline-block border-8 border-red-600 p-8 rounded-lg transform -rotate-12 mask-image text-red-600 font-heading text-[32px] md:text-[50px] uppercase opacity-90 mix-blend-multiply">
                         {item.content}
                     </div>
                 </div>
@@ -542,17 +550,18 @@ const DynamicText = ({ item, index }) => {
         case 'intro':
             return (
                 <div className="mb-12 mt-4 clear-both">
-                    <p className="text-2xl md:text-4xl font-bold font-body leading-tight border-l-8 border-black pl-6 py-2">
+                    <p className="text-[28px] md:text-[40px] font-bold font-body leading-tight border-l-8 border-black pl-6 py-2">
                         {item.content}
                     </p>
                 </div>
             );
         default:
+            // USANDO H4 PARA FORZAR LEGIBILIDAD VISUAL SIN COMPROMETER MUCHO LA SEMANTICA VISUAL
             return (
                 <div className={`mb-10 ${margin} clear-both`}>
-                    <p className="text-xl font-medium font-body leading-loose text-gray-900 max-w-prose">
+                    <h4 className="text-[24px] md:text-[28px] font-medium font-body leading-loose text-gray-900 max-w-prose">
                         {item.content}
-                    </p>
+                    </h4>
                 </div>
             );
     }
@@ -608,8 +617,8 @@ const Section = ({ data, isLocked, onUnlock, sectionRef, nextSectionUnlocked }) 
                     {data.quiz && quizPassed && !nextSectionUnlocked && (
                          <div className="my-12 p-8 border-4 border-black bg-green-100 text-center animate-bounce">
                             <CheckCircle className="w-16 h-16 mx-auto mb-4 text-green-600" />
-                            <h3 className="font-heading text-2xl">¡Correcto!</h3>
-                            <p className="font-body text-lg">Has desbloqueado la siguiente sección.</p>
+                            <h3 className="font-heading text-3xl">¡Correcto!</h3>
+                            <p className="font-body text-[22px] md:text-[26px]">Has desbloqueado la siguiente sección.</p>
                         </div>
                     )}
 
@@ -628,7 +637,7 @@ const Section = ({ data, isLocked, onUnlock, sectionRef, nextSectionUnlocked }) 
                         </div>
                     )}
 
-                    {!onUnlock && (
+                    {!onUnlock && quizPassed && (
                         <div className="mt-24 text-center p-8 border-t-4 border-black bg-gray-50">
                             <p className="font-heading text-xl mb-4">¡Tu viaje apenas comienza!</p>
                             <p className="font-body text-lg mb-6">Sigue descubriendo la profundidad de la sabiduría judía.</p>
@@ -695,13 +704,12 @@ const App = () => {
     const [unlockedLevel, setUnlockedLevel] = useState(0); 
     const sectionRefs = useRef([]);
 
-    // Manejo inteligente de navegación
+    const progress = (unlockedLevel / contentData.length) * 100;
+
     const handleNavigation = (targetLevel) => {
-        // Si el nivel objetivo es nuevo (mayor al actual), lo desbloqueamos
         if (targetLevel > unlockedLevel) {
             setUnlockedLevel(targetLevel);
         } else {
-            // Si ya está desbloqueado, solo hacemos scroll
             scrollToLevel(targetLevel);
         }
     };
@@ -724,6 +732,7 @@ const App = () => {
     return (
         <div className="font-body text-gray-900 selection:bg-pop-magenta selection:text-white">
             <style>{styles}</style>
+            <ProgressBar progress={progress} />
 
             <Hero onStart={() => handleNavigation(1)} />
 
