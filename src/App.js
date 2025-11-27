@@ -556,11 +556,12 @@ const DynamicText = ({ item, index }) => {
                 </div>
             );
         default:
+            // USANDO H4 PARA FORZAR LEGIBILIDAD VISUAL SIN COMPROMETER MUCHO LA SEMANTICA VISUAL
             return (
                 <div className={`mb-10 ${margin} clear-both`}>
-                    <p className="text-[22px] md:text-[26px] font-medium font-body leading-loose text-gray-900 max-w-prose">
+                    <h4 className="text-[24px] md:text-[28px] font-medium font-body leading-loose text-gray-900 max-w-prose">
                         {item.content}
-                    </p>
+                    </h4>
                 </div>
             );
     }
@@ -580,10 +581,13 @@ const Section = ({ data, isLocked, onUnlock, sectionRef, nextSectionUnlocked }) 
     return (
         <div ref={sectionRef} className="w-full min-h-screen flex flex-col items-center py-12 md:py-24 px-4 relative">
             
+            {/* Floating Icons Background */}
             <div className="absolute top-10 left-5 opacity-20 transform -rotate-12 pointer-events-none hidden md:block">{data.icon}</div>
             <div className="absolute bottom-20 right-5 opacity-20 transform rotate-45 pointer-events-none hidden md:block">{data.icon}</div>
 
             <div className={`max-w-4xl w-full relative z-10 reveal-section`}>
+                
+                {/* Card Header */}
                 <div className="mb-16 md:mb-20 text-center">
                     <div className="inline-block bg-black text-white px-4 py-1 font-heading text-sm mb-2 transform -rotate-2">
                         SECCIÓN {data.id}
@@ -593,7 +597,9 @@ const Section = ({ data, isLocked, onUnlock, sectionRef, nextSectionUnlocked }) 
                     </h2>
                 </div>
 
+                {/* Dynamic Content */}
                 <div className="bg-white border-4 border-black p-6 md:p-16 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] relative">
+                    {/* Decorative Tape */}
                     <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-32 md:w-48 h-10 bg-gray-200/80 rotate-1 border border-gray-300 shadow-sm"></div>
 
                     <div className="space-y-2">
@@ -602,6 +608,7 @@ const Section = ({ data, isLocked, onUnlock, sectionRef, nextSectionUnlocked }) 
                         ))}
                     </div>
 
+                    {/* Quiz & Botón */}
                     {data.quiz && !nextSectionUnlocked && !quizPassed && (
                         <Quiz questions={data.quiz} onComplete={() => setQuizPassed(true)} />
                     )}
@@ -650,6 +657,7 @@ const Section = ({ data, isLocked, onUnlock, sectionRef, nextSectionUnlocked }) 
 const Hero = ({ onStart }) => {
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-pop-yellow relative overflow-hidden p-4 md:p-6 border-b-8 border-black">
+            {/* Collage Elements */}
             <div className="absolute top-10 right-10 w-32 h-32 bg-pop-cyan rounded-full border-4 border-black mix-blend-multiply animate-pulse hidden md:block"></div>
             <div className="absolute bottom-10 left-10 w-48 h-48 bg-pop-magenta transform rotate-45 border-4 border-black mix-blend-multiply opacity-80 hidden md:block"></div>
             
