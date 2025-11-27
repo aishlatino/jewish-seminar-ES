@@ -199,8 +199,8 @@ const contentData = [
         icon: <MessageCircle className="w-12 h-12" />,
         text: [
             { type: "heading", content: "La teoría del pueblo elegido" },
-            { type: "body", content: "La idea de que el pueblo judío es el \"pueblo elegido\" es innegablemente popular. En un estudio de la Universidad de California, la afirmación más creída (59%) era que \"los judíos se consideran a sí mismos el pueblo elegido de Dios\"." },
-            { type: "body", content: "Chequeemos ahora si esta creencia es una causa legítima del antisemitismo. Si el \"ser elegido\" es de hecho la causa, entonces el odio en contra de los judíos debería desaparecer si los judíos dejaran de afirmar que son los elegidos." },
+            { type: "body", content: "La idea de que el pueblo judío es el "pueblo elegido" es innegablemente popular. Hace muchos años, la Universidad de California condujo un estudio de antisemitismo. Se le presentaron a los norteamericanos no judíos 18 declaraciones no favorables sobre los judíos, y se les preguntó si creían en alguna de ellas. Por lejos, la afirmación más creída entre los entrevistados (59%) era que 'los judíos se consideran a sí mismos el pueblo elegido de Dios'." },
+            { type: "body", content: "Chequeemos ahora si esta creencia es una causa legítima del antisemitismo – o si es meramente otra excusa. Si el "ser elegido" es de hecho la causa del antisemitismo, entonces el odio en contra de los judíos debería desaparecer si los judíos dejaran de afirmar que son los elegidos." },
             
             { type: "story", title: "El experimento alemán", content: [
                 "A finales del siglo 19, los judíos que vivían en Alemania y Austria rechazaron colectivamente el hecho de \"haber sido elegidos\" y se asimilaron en la nación en la que se encontraban.",
@@ -208,15 +208,25 @@ const contentData = [
                 "La sociedad gentil era el entorno social de su elección, y Alemania su amada madre patria."
             ]},
 
-            { type: "big-question", content: "¿DESAPARECIÓ EL ODIO?" },
+            { type: "big-question", content: "¿DESAPARECIÓ EL ANTISEMITISMO?" },
             { type: "body", content: "Todos conocemos la trágica respuesta a esta pregunta. Los judíos en Alemania y Austria sufrieron la proliferación de antisemitismo más empedernida de toda la historia. Precisamente cuando los judíos rechazaron el hecho de \"haber sido elegidos\" es que sufrieron las formas más violentas de antisemitismo." },
             { type: "note", content: "Claramente, la Teoría del Pueblo Elegido no pasa el Test de Litmus." },
-            { type: "body", content: "Además, casi toda nación sobre la tierra ha, en alguna ocasión, afirmado ser la elegida. Los chinos (\"centro del universo\"), Japón (\"fuente del sol\"), EEUU (Destino Manifiesto). Estas naciones no son odiadas por haber afirmado superioridad. Afirmar que uno es elegido no causa odio." },
+            { type: "heading", content: "Otros pueblos 'elegidos'" },
+            { type: "body", content: "Otra prueba a la Teoría del Pueblo Elegido es ver cómo responde la humanidad ante otros pueblos que afirman ser los 'elegidos'. Si la afirmación de que los judíos son los elegidos genera antisemitismo, entonces todos los grupos que hacen afirmaciones similares deberían convertirse en objetivos de persecución y odio." },
+            { type: "body", content: "El cristianismo y el islam representan otros dos importantes grupos religiosos que afirman haber sido elegidos. La teología cristiana acepta que Dios le dio la Biblia a los judíos y que convirtió a los judíos en sus mensajeros especiales. Sin embargo, la creencia cristiana dice que, a partir de que los judíos rechazaron a Jesús, los cristianos se convirtieron en el nuevo pueblo elegido de Dios." },
+            { type: "body", content: "De igual forma, los musulmanes creen que la Biblia es la palabra de Dios. Sin embargo, la teología musulmana afirma que cuando Mahoma apareció en escena, Dios convirtió a los musulmanes en Su pueblo elegido." },
+            { type: "body", content: "Si los cristianos y los musulmanes afirman que son los elegidos, ¿por qué este hecho no ha generado, en toda la historia, odio en su contra?" },
+            { type: "body", content: "En realidad, casi toda nación sobre la tierra ha, en alguna ocasión, afirmado ser la elegida. Los norteamericanos afirmaron el Destino Manifiesto – que sus acciones eran guiadas Divinamente – cuando anexaron Texas y Alaska en contra de los deseos de los habitantes de esas áreas. Los chinos eligieron nombrar China a su país porque la palabra significa 'centro del universo'. El nombre Japón significa 'fuente del sol'. Para los indios americanos por ejemplo, existe una misma palabra que significa tanto 'ser humano' como 'indio', implicando que todo no indio pertenece a alguna subespecie." },
+            { type: "body", content: "Estas naciones no son odiadas por haber afirmado superioridad. Afirmar que uno es elegido no causa odio; si lo hiciera entonces habría muchas otras naciones que serían objeto de un odio intenso y universal que, en realidad, esta reservado exclusivamente para los judíos." },
+
+
             { type: "heading", content: "La teoría del chivo expiatorio" },
-            { type: "body", content: "La Teoría del Chivo Expiatorio es citada con frecuencia. Su razonamiento es: Hitler necesitaba desviar la atención de los problemas de su nación al atribuírselos a una víctima inocente. Él eligió al azar, seleccionó a los judíos como su chivo expiatorio." },
+            { type: "body", content: "La Teoría del Chivo Expiatorio es citada con frecuencia como una causa del antisemitismo. Algunos historiadores la utilizan para explicar el surgimiento del antisemitismo alemán a finales de la década del 30." },
+            { type: "body", content: "Su razonamiento es el siguiente: Hitler, al igual que muchos dictadores totalitarios que le precedieron, necesitaba desviar la atención de los problemas de su nación al atribuírselos a una víctima inocente. Él eligió al azar, seleccionó a los judíos como su chivo expiatorio y lanzó una masiva campaña difamatoria para separarlos del grupo principal de la sociedad alemana. Tuvo éxito en sus esfuerzos y, como resultado, la gran mayoría de los alemanes terminó odiando a los judíos." },
+
             { type: "body", content: "La Teoría del Chivo Expiatorio eleva una vieja pregunta: ¿Qué vino primero, el huevo o la gallina? En otras palabras, ¿un grupo comienza a ser odiado como consecuencia de ser señalado como un chivo expiatorio, o es seleccionado como chivo expiatorio porque es odiado?" },
             { type: "highlight", content: "Prerrequisito: El odio debe existir antes." },
-            { type: "body", content: "El primer prerrequisito para un posible chivo expiatorio es que los ciudadanos del país estén dispuestos a odiar desde el principio." },
+            { type: "body", content: "El primer prerrequisito para un posible chivo expiatorio es que los ciudadanos del país estén dispuestos a odiar desde el principio. Si intentáramos desviar la atención de nuestros problemas culpando a un grupo que aún no es odiado por la sociedad, el pueblo no lo aceptará. Una buena parte de la población exigirá ver evidencia sobre la culpa del grupo y no nos dejarán salirnos con la nuestra." },
             
             { type: "story", title: "Imaginando a Hitler y los enanos", content: [
                 "Imagina lo que hubiese pasado si Adolf Hitler se hubiera parado frente a una de esas inmensas multitudes en el Coliseo Nacional de Núremberg y hubiera dicho:",
@@ -226,13 +236,27 @@ const contentData = [
                 "Como no hay un odio preexistente hacia los enanos, las personas con pecas o los ciclistas, los gobiernos no tratan de utilizarlos como chivos expiatorios."
             ]},
 
-            { type: "body", content: "Los judíos son elegidos consistentemente como chivo expiatorio porque es muy fácil incentivar el odio en su contra. Por lo tanto, la Teoría del Chivo Expiatorio no es la causa del antisemitismo. En cambio, el antisemitismo es lo que convierte a los judíos en un conveniente chivo expiatorio." },
+            { type: "body", content: "Los judíos son elegidos consistentemente como chivo expiatorio porque es muy fácil incentivar el odio en su contra. Los judíos son el pueblo que todos están más que felices de perseguir." },
+            { type: "body", content: "Por lo tanto, la Teoría del Chivo Expiatorio no es la causa del antisemitismo. En cambio, el antisemitismo es lo que convierte a los judíos en un conveniente chivo expiatorio." },
+            { type: "body", content: "La Teoría del Chivo Expiatorio es simplemente un barómetro indicativo del nivel de odio que ya existe hacia los judíos en una determinada sociedad. Revela cuánto antisemitismo ya existe, esperando ser despertado." },
+            { type: "body", content: "El Chivo Expiatorio es obviamente una excusa, no una razón." },
+
+
+
+
             { type: "heading", content: "Deicidio: Asesinos de Jesús" },
-            { type: "body", content: "¿Es esta la causa real del odio? Si es así, ¿por qué no estaban los cristianos enojados con los judíos hace 2.000 años, en el momento en que los judíos supuestamente mataron a Jesús?" },
-            { type: "body", content: "El antisemitismo cristiano no comenzó hasta mucho después de la muerte de Jesús. No fue hasta varios siglos después que los padres de la Iglesia decidieron que los judíos debían ser perseguidos. La persecución intensa no comenzó sino hasta las Cruzadas, ¡más de 1.000 años después!" },
-            { type: "body", content: "Más aún, el tiempo tiene la cualidad de sanar todas las heridas. Si los cristianos odiaran a los judíos porque mataron a Jesús, esa furia debería haber llegado al clímax inmediatamente después de su muerte, y debería haberse desvanecido durante los dos milenios." },
-            { type: "body", content: "Además, de acuerdo al Nuevo Testamento, los romanos fueron quienes mataron a Jesús." },
-            { type: "quote", content: "Si el asesinato de Jesús es la causa del odio cristiano, ¿por qué fueron sólo los cómplices judíos los categóricamente perseguidos? ¡Los cristianos deberían odiar a los romanos al menos tanto como odian a los judíos!" },
+            { type: "body", content: "Los cristianos han afirmado por mucho tiempo que los judíos asesinaron a Jesús y que por eso los odian. ¿Es esta la causa real del odio? Si es así, ¿por qué no estaban los cristianos enojados con los judíos hace 2.000 años, en el momento en que los judíos supuestamente mataron a Jesús?" },
+            { type: "body", content: "El antisemitismo cristiano no comenzó hasta mucho después de la muerte de Jesús. No fue hasta varios siglos después que los padres de la Iglesia decidieron que los judíos debían ser perseguidos como grupo porque 'mataron a Jesús'. Bernard Blumenkranz, autor de Judíos y Cristianos en el Mundo Occidental documenta que la intensa y constante persecución cristiana de los judíos no comenzó sino hasta el advenimiento de las Cruzadas, ¡más de 1.000 años después de la muerte de Jesús!" },
+            { type: "body", content: "Más aún, una vez que comenzó el odio cristiano hacia los judíos, empeoró con el paso del tiempo. Por lógica, el tiempo debería haber calmado los sentimientos ásperos; todos podemos atestiguar que la ira disminuye gradualmente con el tiempo. El tiempo tiene la cualidad de sanar todas las heridas." },
+            { type: "body", content: "Por ejemplo, en 1866, inmediatamente después de la Guerra Civil en Estados Unidos, un norteño hubiese sentido mucha tensión si hubiese visitado el Sur. Hoy en día, una visita al Sur de Estados Unidos no genera ninguna emoción de ese tipo. ¿Has escuchado alguna vez que un residente de Nueva York tenga miedo de vacacionar en Florida?" },
+            { type: "body", content: "Cuanto más lejos está un evento, menos furia uno siente, ¡siempre y cuando el evento sea la causa real de la furia!" },
+            { type: "body", content: "Por lo tanto, si los cristianos odiaran a los judíos porque mataron a Jesús, esa furia debería haber llegado al clímax inmediatamente después de su muerte, y debería haberse desvanecido durante los dos milenios que transcurrieron a partir del evento. La historia indica un patrón exactamente opuesto, no hay registros de incidentes de antisemitismo inmediatamente después de la muerte de Jesús, pero hay miles de incidentes de este tipo muchos siglos después. Vemos de aquí que la muerte de Jesús no es la causa del antisemitismo cristiano." },
+            { type: "heading", content: "¿Quién mató a Jesús?" },
+            { type: "body", content: "Además, de acuerdo al Nuevo Testamento, los romanos fueron quienes mataron a Jesús. Mientras que los judíos son mencionados como cómplices, los Evangelios de Mateo, Juan y Marcos declaran específicamente que los romanos mataron a Jesús." },
+            { type: "body", content: "Si el asesinato de Jesús es la causa del odio cristiano, ¿por qué fueron sólo los cómplices judíos los categóricamente perseguidos? ¡Los cristianos deberían odiar a los romanos al menos tanto como odian a los judíos!" },
+
+
+            { type: "quote", content: "Obviamente, la muerte de Jesús es sólo una excusa, no la razón del antisemitismo." },
             { type: "stamp", content: "ES UNA EXCUSA" }
         ],
         quiz: [
@@ -255,34 +279,60 @@ const contentData = [
         icon: <X className="w-12 h-12" />,
         text: [
             { type: "heading", content: "La teoría de los forasteros" },
-            { type: "body", content: "Quizás los judíos son odiados simplemente porque son diferentes. Tradicionalmente, los judíos se caracterizaban por vestimenta, leyes y en ocasiones hasta lenguaje diferentes. Los sociólogos se refieren a este fenómeno como \"el desagrado por lo diferente\"." },
-            { type: "body", content: "Pero, ¿qué pasa cuando los judíos abandonan sus diferencias culturales y se convierten en genuinos \"pares\"? Si la Teoría del Forastero es correcta, entonces la solución al antisemitismo debería ser la asimilación." },
+            { type: "body", content: "Quizás los judíos son odiados simplemente porque son diferentes. Tradicionalmente, los judíos se caracterizaban por vestimenta, leyes y en ocasiones hasta lenguaje diferentes. Este tipo de discriminación es lo que los chinos vivieron en los comienzos de Estados Unidos y lo que los franceses vivieron en Inglaterra. Los sociólogos se refieren a este fenómeno como 'el desagrado por lo diferente'." },
+            { type: "body", content: "Esta teoría suena como una causa sensata para el antisemitismo: los judíos han sido odiados porque son diferentes. A través de toda la historia los judíos no se han mezclado; sus sistemas ético, cultural y social fueron diferentes a los de sus vecinos. Y aún más explícitamente, el mayor sueño de los judíos siempre fue su retorno a Sión. Eran ciudadanos obedientes de la ley que contribuían a la nación que los hospedaba y hasta iban al campo de batalla para defenderla, pero sus corazones siempre apuntaban en dirección a la Tierra Prometida. Es innegablemente cierto que durante toda la historia los judíos fueron el paradigma de los 'forasteros'." },
+            { type: "body", content: "¿Pero qué pasa cuando los judíos abandonan sus diferencias culturales y se convierten en genuinos 'pares'? Si la Teoría del Forastero es correcta, entonces la solución al antisemitismo debería ser la asimilación. El antisemitismo debería disminuir en proporción a la capacidad de los judíos de integrarse a las sociedades que los albergan. Pero, ¿es esto lo que ocurre?" },
             
             { type: "story", title: "La desilusión de la asimilación", content: [
-                "En el siglo 18 llegó a Europa el Iluminismo. En diciembre de 1789, durante una discusión en la Asamblea Nacional Francesa, el Conde Stanislas de Clermont-Tonnere declaró: \"Para los judíos como individuos, todo. Para los judíos como nación, nada\".",
-                "Los judíos de Europa saltaron ante la oportunidad. Abandonaron sus antiguas vestimentas, se afeitaron sus barbas y asistieron a las universidades. En resumen, se hicieron más franceses que los franceses mismos.",
-                "Napoleón fue rápido para capitalizar esta \"evolución\". Pero sólo se desilusionaron. El caso Dreyfuss, en el que falsas acusaciones de traición fueron presentadas en contra de un oficial francés judío, fue ideado para demostrar que los judíos nunca podrían ser ciudadanos leales.",
-                "Poco después, el nazismo en Alemania les dio un fuerte mensaje: Los odiamos, no porque son diferentes, ¡sino porque están tratando de ser como nosotros!"
+                "En el siglo 18 llegó a Europa el Iluminismo, dando derechos igualitarios a toda la gente más allá de la religión. En diciembre de 1789, durante una discusión en la Asamblea Nacional Francesa en la que los judíos franceses recibieron derechos igualitarios, el Conde Stanislas de Clermont-Tonnere declaró: \"Para los judíos como individuos, todo. Para los judíos como nación, nada\".",
+                "Los judíos de Europa saltaron ante la oportunidad de lograr igualdad, esperando finalmente deshacerse del fenómeno del 'desagrado por lo diferente'. Abandonaron sus antiguas vestimentas, se afeitaron sus barbas y asistieron a las universidades y a los teatros. Adoptaron el lenguaje, la cultura y los estilos de sus vecinos no judíos, y se casaron con ellos. Eliminaron de sus plegarias toda mención del retorno a Sión. En resumen, se hicieron más franceses que los franceses mismos.",
+                "Napoleón fue rápido para capitalizar esta 'evolución' de los judíos adaptándose a la cultura francesa. En 1807 convocó una corte no diplomada para presionar a los judíos para que abandonaran todo compromiso que aún hayan tenido con una nación judía independiente, forzando a los judíos a declarar su lealtad exclusiva a Francia.",
+                "La aceptación judía de esta actitud se esparció. En Alemania, los judíos reformistas declararon: 'Berlín es nuestro Jerusalem, Alemania es nuestra tierra patria'. Habiendo soportado siglos de odio, los judíos de Europa anticiparon una cálida bienvenida por parte de sus vecinos gentiles.",
+                "Pero sólo se desilusionaron. El caso Dreyfuss, en el que falsas acusaciones de traición fueron presentadas en contra de un oficial francés judío, fue ideado para demostrar que los judíos nunca podrían ser ciudadanos leales a los países que los albergaban.",
+                "Poco después, la subida al poder de Hitler sacudió nuevamente la sensación de seguridad que tenían los judíos gracias a su enfoque de asimilación. El nazismo les dio a los judíos un fuerte mensaje: Los odiamos, no porque son diferentes, ¡sino porque están tratando de ser como nosotros! No podemos permitir que infecten a la raza aria con sus genes inferiores."
             ]},
 
             { type: "body", content: "Mientras los judíos permanecieron como forasteros, la Teoría del Forastero tuvo algo de lógica. A partir de que los judíos intentaron asimilarse, la Teoría del Forastero quedó hecha pedazos – porque nunca había sido la causa real del odio." },
             { type: "heading", content: "La teoría racial" },
             { type: "body", content: "Esto dio lugar a una nueva excusa: la inferioridad de la raza judía. Puedes abandonar las limitaciones externas de tu vida, afeitarte la barba, quitarte la kipá y hasta cambiar tu religión. Pero nunca podrás cambiar tu raza." },
-            { type: "body", content: "El problema inevitable que tiene esta teoría es que se auto-contradice: los judíos no son una raza. Cualquiera puede convertirse en judío – y miembros de toda raza, credo y color del mundo lo han hecho." },
-            { type: "highlight", content: "No hay ninguna característica racial distintiva común." },
-            { type: "body", content: "Incluso la idea de la \"nariz judía\" es un mito. El antisemitismo no puede ser explicado como racismo por la muy simple razón de que los judíos son una nación, no una raza." },
+            { type: "body", content: "El problema inevitable que tiene esta teoría es que se auto-contradice: los judíos no son una raza. Cualquiera puede convertirse en judío – y miembros de toda raza, credo y color del mundo lo han hecho en algún momento u otro." },
+            { type: "highlight", content: "No hay ninguna característica racial distintiva común dentro de los judíos." },
+            { type: "body", content: "Incluso la idea de la 'nariz judía' es un mito. Los antisemitas no odian sólo a los judíos que tienen características físicas distintivamente 'judías', los odian a todos. Odian a los judíos de Europa del Este, a los israelíes, a los rusos y a los yemenitas; odian a los rubios de ojos celestes al igual que a los de piel oscura, o mediterráneos. Odian a todos." },
+            { type: "body", content: "El antisemitismo no puede ser explicado como racismo por la muy simple razón de que los judíos son una nación, no una raza." },
+ 
             { type: "heading", content: "Odio único" },
-            { type: "body", content: "De todas las formas discriminatorias de odio, el antisemitismo es único en cuatro aspectos:" },
+            { type: "body", content: "Hemos analizado las seis explicaciones más comunes para el fenómeno del antisemitismo. Ninguna de estas razones comunes es su raíz principal. Bajo escrutinio, todas probaron ser meras excusas. Debemos mirar de nuevo a este odio para encontrar una verdadera causa. De todas las formas discriminatorias de odio, el antisemitismo es único en cuatro aspectos:" },
             { type: "list", items: [
-                "1. Antigüedad: Excepcionalmente largo.",
-                "2. Universalismo: En todo el mundo.",
-                "3. Intensidad: Intentos de genocidio.",
-                "4. Confusión: Muy poco consenso."
+                "1. Antigüedad: Excepcionalmente largo.",]},
+            { type: "body", content: "El antisemitismo ha existido por un período de tiempo excepcionalmente largo. Uno de los libros más autoritativos sobre antisemitismo, La Angustia de los Judíos: Una Historia de Antisemitismo, escrito por el cura católico Edward Flannery, escribe: 'Un historiador de antisemitismo mira hacia atrás, hacia los milenios de horrores que ha registrado, y emerge una conclusión inescapable: el antisemitismo es diferente por su antigüedad y consistencia'." },
+    
+            { type: "list", items: [
+                "2. Universalismo: En todo el mundo.",]},
+                { type: "body", content: "El antisemitismo se encuentra en todo el mundo. A través de la historia, los judíos han sido odiados en todas las regiones en que han vivido. Sin importar en dónde se asienten, sin importar quién es su hospedador, el antisemitismo eventualmente asoma su horrible cabeza. Entre los años 250 EC y 1948 (un período de 1.700 años) los judíos de Europa experimentaron un promedio de una expulsión cada 21 años. Los judíos fueron expulsados de Inglaterra, Francia, Austria, Alemania, Lituania, España, Portugal, Bohemia, Moravia y 71 países más." },
+
+            { type: "list", items: [
+                "3. Intensidad: Intentos de genocidio.",]},
+                { type: "body", content: "El odio en contra de los judíos es ventilado de un modo particularmente violento. Un grupo que es odiado generalmente se convierte en el objeto de bromas étnicas, y es sujeto a discriminación. Por otro lado, los judíos son sujeto de intentos de genocidio. Los pogromos de Chmelnicki, el Holocausto y las amenazas nucleares de Irán son intentos de exterminar a un pueblo que representa sólo una pequeña minoría de la población mundial." },
+
+            { type: "list", items: [
+                "4. Confusión: Muy poco consenso."]},
             ]},
-            { type: "body", content: "Sorprendentemente, ¡hay muy poco consenso sobre lo que el antisemitismo odia en particular! Si le pides a un antisemita que declare sus razones, esas razones son a menudo contradictorias." },
-            { type: "note", content: "Los judíos son odiados por ser una raza perezosa e inferior – pero también por dominar la economía. Los judíos son odiados por mantener tercamente su estado de separación y, cuando se asimilan, por ser una amenaza a la pureza racial. Por ser pacifistas y belicistas. Capitalistas y comunistas." },
+            { type: "body", content: "Sorprendentemente, ¡hay muy poco consenso sobre lo que el antisemitismo odia en particular! Cuando un grupo odia a otro, ese odio puede ser analizado hasta llegar a unas cuantas razones simples y bien definidas. En Bosnia la gente es perseguida por razones territoriales y religiosas. En Irlanda es la independencia nacional y la religión. Los negros son odiados por razones raciales. Pero nadie ha ofrecido aún ni una razón aceptada universalmente para explicar por qué la gente odia a los judíos." },
+            { type: "body", content: "Si le pides a un antisemita que declare sus razones, esas razones son a menudo contradictorias. Piensa en esta paradoja:" },
+
+            { type: "note", content: "Los judíos son odiados por ser una raza perezosa e inferior, pero también por dominar la economía y apropiarse del mundo." },
+            { type: "note", content: "Los judíos son odiados por mantener tercamente su estado de separación y, cuando se asimilan, por ser una amenaza a la pureza racial por medio de los matrimonios mixtos." },
+            { type: "note", content: "Los judíos son vistos como pacifistas y como belicistas; como capitalistas y como comunistas revolucionarios; como posesores de una mentalidad de Pueblo Elegido y de un complejo de inferioridad." },
             { type: "stamp", content: "DEMASIADAS RAZONES = NINGUNA RAZÓN" },
-            { type: "body", content: "Las \"Seis Razones\" no aguantan el escrutinio – ¡son excusas! El problema es que cada una de las explicaciones se enfoca en asuntos externos al judío, no tienen nada que ver con su esencia. Entonces, ¿cuál es “La Razón”?" }
+            { type: "body", content: "Las 'Seis Razones' no aguantan el escrutinio – ¡son excusas!" }
+            { type: "body", content: "El odio por los judíos durante los últimos 2.000 años ha sido continuo, universal y vicioso, pero las explicaciones para este odio cambian constantemente. Este hecho, por sí solo, nos alerta sobre la necesidad de investigar lo que yace en la base de esas explicaciones." }
+            { type: "body", content: "Imagínate en una entrevista laboral. El entrevistador te dice de frente que no puedes ser considerado para el trabajo porque te faltan habilidades en informática. Te inscribes en un curso de computación, y en un mes has obtenido las habilidades necesarias." }
+            { type: "body", content: "Vuelves a la compañía y el entrevistador te dice que no te puede contratar porque te falta entrenamiento en finanzas y administración. Estudias diligentemente, y en un corto tiempo has dominado la disciplina." }
+            { type: "body", content: "Cuando vuelves a la compañía por tercera vez, te dicen que la razón real por la que no te pueden contratar es tu corte de pelo; simplemente no refleja la imagen que la compañía desea representar en público." }
+            { type: "body", content: "Este fiasco te envía un mensaje muy claro: Las razones que la compañía te ha estado dando todo el tiempo son sólo excusas. El entrevistador sólo utilizó excusas para cubrir alguna razón más profunda por la que se rehúsa a contratarte." }
+            { type: "body", content: "Esta situación es muy similar a las explicaciones comunes para el antisemitismo: Aún cuando las razones ya no son aplicables, el antisemitismo sigue existiendo." }
+            { type: "body", content: "Esto no significa que deberíamos descontar estas razones por completo. A pesar de que sean excusas y no la fuente del odio, influencian a las masas para odiar a los judíos. Pueden exacerbar el odio, pero ciertamente no lo explican." }
+            { type: "body", content: "El problema es que cada una de las explicaciones se enfoca en asuntos externos al judío, no tienen nada que ver con su esencia." }
         ],
         quiz: [
             {
