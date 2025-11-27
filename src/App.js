@@ -106,11 +106,11 @@ const contentData = [
             {
                 question: "¿Cuál es la diferencia clave entre una causa y una excusa según el texto?",
                 options: [
-                    "Si quitas la causa, el efecto desaparece. Si quitas la excusa, el efecto persiste.", // Correcta movida al principio (índice 0)
                     "Las causas son siempre económicas, las excusas son sociales.",
-                    "Las excusas son mentiras, las causas son verdades a medias."
+                    "Las excusas son mentiras, las causas son verdades a medias.",
+                    "Si quitas la causa, el efecto desaparece. Si quitas la excusa, el efecto persiste."
                 ],
-                correct: 0
+                correct: 2
             }
         ]
     },
@@ -162,6 +162,19 @@ const contentData = [
             ]},
 
             { type: "body", content: "Si los antisemitas realmente creen que los judíos dirigen el mundo, ¿por qué no se relacionan con los judíos como lo hicieron los japoneses? El hecho de que los judíos son por lo general tratados como marginados prueba que la gente no cree que los judíos sean tan ricos o poderosos como afirman. En otras palabras, los antisemitas no toman su propia propaganda con seriedad." },
+            
+            { type: "heading", content: "¿Qué pasó con el poder judío?" },
+            { type: "body", content: "Si hay algo de cierto en la idea de que los judíos controlan los gobiernos, ¿por qué no pudieron esos poderosos judíos convencer a ningún país para que aceptaran a los refugiados que estaban tratando de escapar del infierno durante el Holocausto? Si \"la judería del mundo\" fuese tan poderosa y tuviera tanta influencia política, con seguridad al menos un gobierno habría accedido a aceptarlos como refugiados y les habría permitido permanecer hasta el final de la guerra…" },
+            { type: "note", content: "La película El Viaje de los Malditos demuestra dramáticamente cómo un gobierno metió su cabeza en la arena mientras la matanza al por mayor de judíos continuó desenfrenadamente. De esta manera, la afirmación de que los judíos controlan los gobiernos suena dolorosamente absurda." },
+            
+            { type: "heading", content: "Los judíos como prestamistas" },
+            { type: "body", content: "Del mismo modo, mucha gente dice que el antisemitismo fue causado por el hecho de que los judíos fueron prestamistas en muchas sociedades y supuestamente \"exprimieron\" a sus compatriotas no judíos." },
+            { type: "body", content: "En realidad, la verdad es lo opuesto. Los judíos fueron forzados a convertirse en prestamistas precisamente por las severas limitaciones de empleo que las tendencias antisemitas les impusieron. Las leyes antisemitas hicieron imposible que los judíos fueran propietarios de tierra, que asistieran a universidades o que ingresaran a otra ocupación normal. El dinero era el único bien con el que tenían permitido tratar, por lo que, al no tener otra opción, se convirtieron en prestamistas." },
+            { type: "body", content: "Entonces, vemos que los judíos no fueron odiados por ser prestamistas, sino que fueron prestamistas porque eran odiados." },
+            
+            { type: "highlight", content: "Judíos poderosos o judíos débiles, judíos ricos o judíos pobres, todos han sido odiados por igual." },
+            { type: "body", content: "Obviamente, la razón económica para el antisemitismo es, en realidad, una excusa." },
+            
             { type: "stamp", content: "ES UNA EXCUSA" }
         ],
         quiz: [
@@ -169,10 +182,10 @@ const contentData = [
                 question: "¿Qué demuestra el ejemplo de los judíos pobres en Polonia y Rusia?",
                 options: [
                     "Que el antisemitismo solo ataca a los ricos.",
-                    "Que el dinero no es la causa, ya que los judíos pobres también fueron odiados.", // Correcta movida al medio (índice 1)
-                    "Que la pobreza protegía a los judíos del odio."
+                    "Que la pobreza protegía a los judíos del odio.",
+                    "Que el dinero no es la causa, ya que los judíos pobres también fueron odiados."
                 ],
-                correct: 1
+                correct: 2
             }
         ]
     },
@@ -366,10 +379,10 @@ const contentData = [
                 question: "Según el Talmud, ¿por qué la Torá fue entregada en el Monte Sinaí?",
                 options: [
                     "Porque era el monte más alto.",
-                    "Por el juego de palabras con 'Siná' (odio), indicando que allí comenzó la responsabilidad moral que genera el odio.", // Correcta movida al medio (índice 1)
-                    "Porque estaba cerca de Egipto."
+                    "Porque estaba cerca de Egipto.",
+                    "Por el juego de palabras con 'Siná' (odio), indicando que allí comenzó la responsabilidad moral que genera el odio."
                 ],
-                correct: 1
+                correct: 2
             }
         ]
     }
