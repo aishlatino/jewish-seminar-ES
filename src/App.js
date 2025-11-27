@@ -106,11 +106,11 @@ const contentData = [
             {
                 question: "¿Cuál es la diferencia clave entre una causa y una excusa según el texto?",
                 options: [
+                    "Si quitas la causa, el efecto desaparece. Si quitas la excusa, el efecto persiste.", // Correcta movida al principio (índice 0)
                     "Las causas son siempre económicas, las excusas son sociales.",
-                    "Las excusas son mentiras, las causas son verdades a medias.",
-                    "Si quitas la causa, el efecto desaparece. Si quitas la excusa, el efecto persiste."
+                    "Las excusas son mentiras, las causas son verdades a medias."
                 ],
-                correct: 2
+                correct: 0
             }
         ]
     },
@@ -169,10 +169,10 @@ const contentData = [
                 question: "¿Qué demuestra el ejemplo de los judíos pobres en Polonia y Rusia?",
                 options: [
                     "Que el antisemitismo solo ataca a los ricos.",
-                    "Que la pobreza protegía a los judíos del odio.",
-                    "Que el dinero no es la causa, ya que los judíos pobres también fueron odiados."
+                    "Que el dinero no es la causa, ya que los judíos pobres también fueron odiados.", // Correcta movida al medio (índice 1)
+                    "Que la pobreza protegía a los judíos del odio."
                 ],
-                correct: 2
+                correct: 1
             }
         ]
     },
@@ -273,11 +273,11 @@ const contentData = [
             {
                 question: "¿Por qué la asimilación no funcionó para detener el antisemitismo?",
                 options: [
+                    "Porque el nazismo los odiaba precisamente por tratar de ser 'como ellos'.", // Correcta movida al principio (índice 0)
                     "Porque los judíos no se asimilaron lo suficiente.",
-                    "Porque perdieron su identidad cultural.",
-                    "Porque el nazismo los odiaba precisamente por tratar de ser 'como ellos'."
+                    "Porque perdieron su identidad cultural."
                 ],
-                correct: 2
+                correct: 0
             }
         ]
     },
@@ -366,10 +366,10 @@ const contentData = [
                 question: "Según el Talmud, ¿por qué la Torá fue entregada en el Monte Sinaí?",
                 options: [
                     "Porque era el monte más alto.",
-                    "Porque estaba cerca de Egipto.",
-                    "Por el juego de palabras con 'Siná' (odio)."
+                    "Por el juego de palabras con 'Siná' (odio), indicando que allí comenzó la responsabilidad moral que genera el odio.", // Correcta movida al medio (índice 1)
+                    "Porque estaba cerca de Egipto."
                 ],
-                correct: 2
+                correct: 1
             }
         ]
     }
@@ -466,6 +466,7 @@ const Quiz = ({ questions, onComplete }) => {
 // --- RENDERIZADO DE TEXTO DINÁMICO ---
 const DynamicText = ({ item, index }) => {
     const rotation = index % 2 === 0 ? 'rotate-1' : '-rotate-1';
+    // Aumento de márgenes para mobile first y desktop
     const margin = index % 3 === 0 ? 'ml-0' : (index % 3 === 1 ? 'ml-2 md:ml-12' : 'ml-1 md:ml-6');
 
     switch (item.type) {
@@ -559,7 +560,7 @@ const DynamicText = ({ item, index }) => {
             // USANDO H3 PARA FORZAR LEGIBILIDAD VISUAL
             return (
                 <div className={`mb-10 ${margin} clear-both`}>
-                    <h3 className="text-[26px] md:text-[32px] font-medium font-body leading-loose text-gray-900 max-w-prose">
+                    <h3 className="text-[24px] md:text-[32px] font-medium font-body leading-loose text-gray-900 max-w-prose">
                         {item.content}
                     </h3>
                 </div>
@@ -639,8 +640,8 @@ const Section = ({ data, isLocked, onUnlock, sectionRef, nextSectionUnlocked }) 
 
                     {!onUnlock && quizPassed && (
                         <div className="mt-24 text-center p-8 border-t-4 border-black bg-gray-50">
-                            <p className="font-heading text-xl mb-4">¡Tu viaje apenas comienza!</p>
-                            <p className="font-body text-lg mb-6">Sigue descubriendo la profundidad de la sabiduría judía.</p>
+                            <p className="font-heading text-[24px] md:text-[30px] mb-4">¡Tu viaje apenas comienza!</p>
+                            <p className="font-body text-[22px] md:text-[26px] mb-6">Sigue descubriendo la profundidad de la sabiduría judía.</p>
                             <a href="https://aishlatino.com" target="_blank" rel="noreferrer" className="group relative inline-block w-full md:w-auto">
                                 <div className="relative border-2 border-black bg-pop-yellow px-8 py-4 font-heading text-xl hover:bg-black hover:text-white transition-colors uppercase tracking-widest">
                                     Ir a AishLatino.com
@@ -669,7 +670,8 @@ const Hero = ({ onStart }) => {
                     </div>
                 </div>
 
-                <h1 className="font-heading text-[12vw] md:text-[130px] leading-[0.85] mb-8 text-white drop-shadow-[4px_4px_0_rgba(0,0,0,1)] md:drop-shadow-[8px_8px_0_rgba(0,0,0,1)] text-stroke-black tracking-tighter">
+                {/* TITULO SOLIDO CON SOMBRA NEGRA (Sin text-stroke) */}
+                <h1 className="font-heading text-[12vw] md:text-[130px] leading-[0.85] mb-8 text-white drop-shadow-[4px_4px_0_rgba(0,0,0,1)] md:drop-shadow-[8px_8px_0_rgba(0,0,0,1)] tracking-tighter">
                     EL ODIO<br/>MÁS ANTIGUO<br/>DEL MUNDO
                 </h1>
 
