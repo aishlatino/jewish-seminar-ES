@@ -93,12 +93,12 @@ const contentData = [
             { type: "body", content: "Mantén en mente esta distinción mientras exploramos las seis razones más frecuentemente ofrecidas para el antisemitismo. A medida que tratemos cada una de estas explicaciones trataremos también de discernir si son la causa del odio o meramente una excusa." },
             { type: "body", content: "Los historiadores y sociólogos han sugerido muchas teorías para explicar el antisemitismo. Nosotros las trataremos una a una y discutiremos su validez." },
             { type: "list", items: [
-                "Economía: Riqueza y poder.",
-                "Pueblo Elegido: Arrogancia.",
-                "Chivo Expiatorio: Culpa conveniente.",
-                "Deicidio: Mataron a Jesús.",
-                "Forasteros: Son diferentes.",
-                "Teoría Racial: Raza inferior."
+                "Economía: Los judíos son odiados porque poseen demasiada riqueza y poder.",
+                "Pueblo Elegido: Los judíos son odiados porque afirman con arrogancia que son el pueblo elegido.",
+                "Chivo Expiatorio: CLos judíos son un grupo conveniente para señalar y culpar por todos los problemas.",
+                "Deicidio: Los judíos son odiados porque mataron a Jesús.",
+                "Forasteros: Los judíos son odiados porque son diferentes al resto de la sociedad.",
+                "Teoría Racial: los judíos son odiados porque son una raza inferior."
             ]},
             { type: "highlight", content: "Examinemos estas seis razones frecuentemente dadas y determinemos si son verdaderamente causas o excusas." }
         ],
@@ -121,12 +121,11 @@ const contentData = [
         color: "bg-pop-cyan",
         icon: <Star className="w-12 h-12" />,
         text: [
-            { type: "heading", content: "¿Dinero y Poder?" },
-            { type: "body", content: "¿Acaso la riqueza y el poder de los judíos es la causa del antisemitismo?" },
+            { type: "heading", content: "La teoría económica" },
             { type: "body", content: "La Teoría Económica del antisemitismo postula que la riqueza y el poder de los judíos provoca la envidia de otros grupos, lo que desemboca en un gran resentimiento." },
             { type: "body", content: "Esta teoría ha aparecido durante la historia con diferentes disfraces. Una de las formas en las que se hizo popular fue a través de Los Protocolos de los Ancianos de Sión, las actas de \"encuentros secretos\" ficticios en los que los líderes judíos conspiraron para gobernar el mundo. Los Protocolos es un libro salvajemente antisemita creado por la policía secreta rusa." },
             { type: "body", content: "Este relato ficticio proveyó una excelente excusa para campañas de persecución en contra de los judíos, e influyó a las masas para que creyeran el mito de que los judíos controlan los gobiernos. Es el segundo libro más publicado de la historia." },
-            { type: "intro", content: "¿Acaso la gente de hoy en día cree todavía que los judíos tienen alguna misteriosa ventaja financiera?" },
+            { type: "intro", content: "¿Acaso la gente de hoy en día cree todavía que los judíos tienen alguna misteriosa ventaja financiera y organizacional por sobre el resto de la humanidad?" },
             
             { type: "story", title: "Antiguo secreto chino (Historia Real)", content: [
                 "Un físico judío que trabajaba para la Corporación Exxon pasó muchos meses trabajando en un proyecto en coordinación con un científico chino de primer nivel mundial. Los dos hombres desarrollaron una buena relación laboral y se hicieron amigos.",
@@ -142,7 +141,7 @@ const contentData = [
             ]},
             
             { type: "body", content: "Obviamente, no existe ninguna organización internacional de este tipo. Sin embargo, la suposición de este científico de primer nivel mundial demuestra que el mito del acceso judío a ilimitada riqueza está vivo y coleando todavía hoy." },
-            { type: "heading", content: "Aplicando el test de litmus" },
+            { type: "heading", content: "Aplicando el test de litmus (Criterio de rechazo)" },
             { type: "body", content: "¿Explica esta actitud el antisemitismo? ¿Es la Teoría económica una causa o una excusa del antisemitismo?" },
             { type: "body", content: "Primero, mira las actitudes universales hacia los ricos. No vemos ninguna persecución histórica sostenida en contra de los no judíos ricos. Entonces, si los repudiadores deciden señalar a los ricos judíos e ignorar a los no judíos, la economía no puede ser considerada la causa del odio." },
             { type: "body", content: "Segundo, si quitamos el elemento de la riqueza y el poder de los judíos, ¿desaparece el antisemitismo?" },
@@ -151,8 +150,7 @@ const contentData = [
             { type: "body", content: "Cuando los Nazis liquidaron el Gueto de Varsovia no había ningún negocio judío que destruir. En realidad, las condiciones de pobreza allí eran espantosas. Los judíos en el gueto no podrían haber sido considerados 'ricos' por ningún estándar del mundo, y aún así los Nazis pensaron que debían ser eliminados." },
             { type: "highlight", content: "Los judíos pobres siempre han sido odiados a la par de los judíos ricos." },
             { type: "body", content: "Cuando un judío logra éxito financiero puede llegar a hacer que el antisemitismo latente salga a la superficie, pero su éxito claramente no es lo que hizo que la otra persona sea antisemita. Por lo tanto, el dinero no puede ser la causa del antisemitismo." },
-            { type: "heading", content: "El Plan Fugu" },
-            { type: "body", content: "¿Y qué hay del poder? ¿Puede el poder ser la causa del antisemitismo? Si alguien rico y poderoso viene a pedirte un favor, ¿lo perseguirías? ¡No!, lo ayudarías. Que esa persona te deba un favor es una excelente póliza de seguros. Un claro ejemplo son los países árabes productores de petróleo que, a pesar de que sus estándares van en contra de los valores de oriente, son ampliamente consentidos." },
+            { type: "body", content: "¿Y qué hay del poder? ¿Puede el poder ser la causa del antisemitismo? Si alguien rico y poderoso viene a pedirte un favor, ¿lo perseguirías? No, lo ayudarías. Que esa persona te deba un favor es una excelente póliza de seguros. Un claro ejemplo son los países árabes productores de petróleo que, a pesar de que sus estándares van en contra de los valores de oriente, son ampliamente consentidos." },
             { type: "body", content: "Hubo una nación que trató a los judíos como si fueran ricos y poderosos. Los japoneses nunca han estado muy expuestos a los judíos, y siempre supieron poco sobre ellos." },
             
             { type: "story", title: "El Plan Fugu", content: [
@@ -193,14 +191,14 @@ const contentData = [
     },
     {
         id: 3,
-        title: "Pueblo Elegido & Chivo Expiatorio",
+        title: "Pueblo Elegido, Chivo Expiatorio y Deicidio",
         subtitle: "PARTE 3",
         color: "bg-pop-magenta",
         icon: <MessageCircle className="w-12 h-12" />,
         text: [
             { type: "heading", content: "La teoría del pueblo elegido" },
-            { type: "body", content: "La idea de que el pueblo judío es el "pueblo elegido" es innegablemente popular. Hace muchos años, la Universidad de California condujo un estudio de antisemitismo. Se le presentaron a los norteamericanos no judíos 18 declaraciones no favorables sobre los judíos, y se les preguntó si creían en alguna de ellas. Por lejos, la afirmación más creída entre los entrevistados (59%) era que 'los judíos se consideran a sí mismos el pueblo elegido de Dios'." },
-            { type: "body", content: "Chequeemos ahora si esta creencia es una causa legítima del antisemitismo – o si es meramente otra excusa. Si el "ser elegido" es de hecho la causa del antisemitismo, entonces el odio en contra de los judíos debería desaparecer si los judíos dejaran de afirmar que son los elegidos." },
+            { type: "body", content: "La idea de que el pueblo judío es el 'pueblo elegido' es innegablemente popular. Hace muchos años, la Universidad de California condujo un estudio de antisemitismo. Se le presentaron a los norteamericanos no judíos 18 declaraciones no favorables sobre los judíos, y se les preguntó si creían en alguna de ellas. Por lejos, la afirmación más creída entre los entrevistados (59%) era que 'los judíos se consideran a sí mismos el pueblo elegido de Dios'." },
+            { type: "body", content: "Chequeemos ahora si esta creencia es una causa legítima del antisemitismo – o si es meramente otra excusa. Si el 'ser elegido' es de hecho la causa del antisemitismo, entonces el odio en contra de los judíos debería desaparecer si los judíos dejaran de afirmar que son los elegidos." },
             
             { type: "story", title: "El experimento alemán", content: [
                 "A finales del siglo 19, los judíos que vivían en Alemania y Austria rechazaron colectivamente el hecho de \"haber sido elegidos\" y se asimilaron en la nación en la que se encontraban.",
@@ -244,7 +242,7 @@ const contentData = [
 
 
 
-            { type: "heading", content: "Deicidio: Asesinos de Jesús" },
+            { type: "heading", content: "Deicidio: La teoría de los asesinos de Jesús" },
             { type: "body", content: "Los cristianos han afirmado por mucho tiempo que los judíos asesinaron a Jesús y que por eso los odian. ¿Es esta la causa real del odio? Si es así, ¿por qué no estaban los cristianos enojados con los judíos hace 2.000 años, en el momento en que los judíos supuestamente mataron a Jesús?" },
             { type: "body", content: "El antisemitismo cristiano no comenzó hasta mucho después de la muerte de Jesús. No fue hasta varios siglos después que los padres de la Iglesia decidieron que los judíos debían ser perseguidos como grupo porque 'mataron a Jesús'. Bernard Blumenkranz, autor de Judíos y Cristianos en el Mundo Occidental documenta que la intensa y constante persecución cristiana de los judíos no comenzó sino hasta el advenimiento de las Cruzadas, ¡más de 1.000 años después de la muerte de Jesús!" },
             { type: "body", content: "Más aún, una vez que comenzó el odio cristiano hacia los judíos, empeoró con el paso del tiempo. Por lógica, el tiempo debería haber calmado los sentimientos ásperos; todos podemos atestiguar que la ira disminuye gradualmente con el tiempo. El tiempo tiene la cualidad de sanar todas las heridas." },
@@ -264,21 +262,21 @@ const contentData = [
                 question: "Cuando los judíos alemanes dejaron de llamarse 'Pueblo Elegido' y se asimilaron, ¿qué sucedió?",
                 options: [
                     "El antisemitismo desapareció inmediatamente.",
-                    "Fueron aceptados completamente en la sociedad.",
-                    "Sufrieron la forma más violenta de antisemitismo."
+                    "Sufrieron la forma más violenta de antisemitismo.",
+                    "Fueron aceptados completamente en la sociedad."
                 ],
-                correct: 2
+                correct: 1
             }
         ]
     },
     {
         id: 4,
-        title: "Forasteros y Raza",
+        title: "Judíos forasteros y la Teoría racial",
         subtitle: "PARTE 4",
         color: "bg-pop-lime",
         icon: <X className="w-12 h-12" />,
         text: [
-            { type: "heading", content: "La teoría de los forasteros" },
+            { type: "heading", content: "La teoría de los judíos como forasteros" },
             { type: "body", content: "Quizás los judíos son odiados simplemente porque son diferentes. Tradicionalmente, los judíos se caracterizaban por vestimenta, leyes y en ocasiones hasta lenguaje diferentes. Este tipo de discriminación es lo que los chinos vivieron en los comienzos de Estados Unidos y lo que los franceses vivieron en Inglaterra. Los sociólogos se refieren a este fenómeno como 'el desagrado por lo diferente'." },
             { type: "body", content: "Esta teoría suena como una causa sensata para el antisemitismo: los judíos han sido odiados porque son diferentes. A través de toda la historia los judíos no se han mezclado; sus sistemas ético, cultural y social fueron diferentes a los de sus vecinos. Y aún más explícitamente, el mayor sueño de los judíos siempre fue su retorno a Sión. Eran ciudadanos obedientes de la ley que contribuían a la nación que los hospedaba y hasta iban al campo de batalla para defenderla, pero sus corazones siempre apuntaban en dirección a la Tierra Prometida. Es innegablemente cierto que durante toda la historia los judíos fueron el paradigma de los 'forasteros'." },
             { type: "body", content: "¿Pero qué pasa cuando los judíos abandonan sus diferencias culturales y se convierten en genuinos 'pares'? Si la Teoría del Forastero es correcta, entonces la solución al antisemitismo debería ser la asimilación. El antisemitismo debería disminuir en proporción a la capacidad de los judíos de integrarse a las sociedades que los albergan. Pero, ¿es esto lo que ocurre?" },
@@ -354,27 +352,47 @@ const contentData = [
         icon: <Zap className="w-12 h-12" />,
         text: [
             { type: "intro", content: "La mejor manera de entender lo que los antisemitas realmente odian es examinar su propia retórica." },
-            { type: "heading", content: "Quitando el elemento judío" },
-            { type: "body", content: "Casi sin excepción, las razones del antisemitismo ofrecidas por los diferentes eruditos no tienen nada que ver con el hecho de que los judíos son judíos. Estas razones \"de-judaízan\" efectivamente al antisemitismo." },
+            { type: "heading", content: "Quitando el elemento judío del antisemitismo" },
+            { type: "body", content: "Casi sin excepción, las razones del antisemitismo ofrecidas por los diferentes eruditos no tienen nada que ver con el hecho de que los judíos son judíos (por ejemplo, los judíos son ricos o son diferentes)." },
+            { type: "body", content: "Estas razones 'de-judaízan' efectivamente al antisemitismo, equiparándolo con cualquier otro tipo de odio común. De acuerdo a esta actitud, el Holocausto – el intento más sistemático de exterminar a un pueblo en la historia de la humanidad – no tuvo nada que ver con razones 'judías'. Los judíos simplemente estuvieron en el lugar equivocado en el momento equivocado."},
             { type: "body", content: "En su libro \"¿Por Qué los Judíos?\" Dennis Prager cita un ejemplo deslumbrante en contra de la idea de que no hay nada judío en el antisemitismo." },
             
-            { type: "story", title: "Ana Frank: Diario vs Teatro", content: [
-                "El 11 de abril de 1944, Ana Frank escribió en su diario:",
-                "\"¿Quién nos hizo a los judíos diferentes de los otros pueblos? ¿Quién ha permitido que suframos tan terriblemente hasta ahora? Es Dios Quien nos ha hecho lo que somos, pero también es Dios Quien nos levantará de nuevo. Quién sabe – incluso puede ser nuestra religión, de la cual el mundo y todos los pueblos aprenden el bien, y por esa sola razón ahora sufrimos.\"",
-                "Ana Frank identificó el antisemitismo como un odio del judaísmo. Sorprendentemente, cuando la historia de Ana Frank fue reconstruida por Lillian Hellman en una obra de teatro, sus palabras fueron cambiadas por completo. \"¿Por qué son odiados los judíos?\" pregunta Ana. \"Bueno, un día es un grupo, y al día siguiente otro…\"."
+            { type: "story", title: "Ana Frank escribió...", content: [
+                "El 11 de abril de 1944, demostrando una misteriosa sabiduría que superaba por mucho su edad, Ana Frank escribió en su diario:",
+                "\"¿Quién nos hizo a los judíos diferentes de los otros pueblos? ¿Quién ha permitido que suframos tan terriblemente hasta ahora? Es Dios Quien nos ha hecho lo que somos, pero también es Dios Quien nos levantará de nuevo. Quién sabe – incluso puede ser nuestra religión, de la cual el mundo y todos los pueblos aprenden el bien, y por esa sola razón ahora sufrimos. Nunca podremos ser sólo holandeses, o ingleses, o representantes de ningún otro país. Siempre seguiremos siendo judíos.",
+                "Ana Frank aclaró el punto de que los judíos tienen algo especialmente valioso para darle al mundo, y eso es precisamente lo que el mundo ha resentido al perseguir a los judíos. Ana Frank identificó el antisemitismo como un odio del judaísmo, un odio completamente diferente a la intolerancia o el racismo que otros pueblos sufren.."
             ]},
+            { type: "body", content: "Sorprendentemente, cuando la historia de Ana Frank fue reconstruida por Lillian Hellman en una obra de teatro, sus palabras fueron cambiadas por completo. '¿Por qué son odiados los judíos?' pregunta Ana. 'Bueno, un día es un grupo, y al día siguiente otro…'" },
+            { type: "body", content: "En el teatro se le hizo creer a las audiencias que los judíos han sido odiados de la misma manera en que otros pueblos han sido odiados. En otras palabras, no hay nada judío en el antisemitismo.            " },
+            { type: "body", content: "¿Pero qué dicen los antisemitas mismos sobre este tema?" },
 
             { type: "heading", content: "El honesto enfoque de Hitler" },
-            { type: "body", content: "Un individuo que no utilizó las muchas y encubiertas explicaciones ofrecidas por los eruditos fue Adolf Hitler. Hitler reconoció abiertamente la singularidad de los judíos. Para él, los judíos no eran meros chivos expiatorios; la nación judía era su enemigo mortal." },
-            { type: "body", content: "Hitler declaró: \"La batalla por la dominación del mundo será luchada entre nosotros – entre los alemanes y los judíos. Todo lo demás es fachada e ilusión\"." },
+            { type: "body", content: "Los eruditos han hecho consistentes intentos para probar que no hay nada especialmente judío que engendre antisemitismo. Veamos si los comentarios de los famosos 'aborrecedores de judíos' revelan lo que encuentran tan criticable." },
+            { type: "body", content: "Un individuo que no utilizó las muchas y encubiertas explicaciones ofrecidas por los eruditos fue Adolf Hitler, el hombre responsable del azote de antisemitismo más devastador en la historia de la humanidad." },
+            { type: "body", content: "Hitler reconoció abiertamente la singularidad de los judíos como pueblo. Hitler se dio cuenta que los judíos nunca pudieron integrarse al resto de la humanidad con éxito y se propuso el objetivo de que nunca lo hicieran." },
+            { type: "body", content: "La forma de antisemitismo de Hitler no fue un medio para un fin, fue un fin en sí mismo. Las Leyes de Núremberg, establecidas en 1935, alienaron y desmantelaron con efectividad a la comunidad judía de Alemania – pero para Hitler, esto no fue suficiente." },
+            { type: "body", content: "A finales de la década del 30 Alemania fue reconstruida y su moral recuperada, pero los ojos de Hitler permanecieron puestos sobre los judíos. Siete años después de que las Leyes de Núremberg habían herido y mutilado a los judíos en cuerpo y alma, se lanzó la Solución Final en la conferencia de Wansee." },
+            { type: "body", content: "En la conferencia de 1942, Hitler vio a los judíos como algo mucho más amenazante que meros chivos expiatorios; la nación judía era su enemigo mortal, por lo que su absoluta destrucción se convirtió en su objetivo." },
+            { type: "body", content: "Hitler veía al Nacional Socialismo como un nuevo orden mundial, una forma de recrear a la humanidad. ¿Cómo ocurriría esta renovación de la humanidad?" },
+           
+            { type: "body", content: "Hitler declaró: \"La batalla por la dominación del mundo será luchada entre nosotros – entre los alemanes y los judíos. Todo lo demás es fachada e ilusión. Detrás de Inglaterra está Israel, y así también detrás de Francia y detrás de Estados Unidos. A pesar de que hayamos sacado a los judíos de Alemania, continúan siendo nuestro enemigo mundial.\"." },
             { type: "highlight", content: "¿Por qué Hitler apuntó a los judíos?" },
-            { type: "body", content: "Eliminar a los judíos era la clave para la utopía de Hitler. La ambición que lo movilizaba era liberar al mundo de las ataduras de la consciencia y de la moral, alejar al mundo del monoteísmo." },
+            { type: "body", content: "Eliminar a los judíos era la clave para la utopía de Hitler. La ambición que lo movilizaba era liberar al mundo de las ataduras de la consciencia y de la moral, alejar al mundo del monoteísmo. Creó su propia religión a partir de una filosofía basada en permitir todos los deseos más básicos del hombre." },
             { type: "note", content: "La \"Juventud Hitleriana\" cantaba: \"No necesitamos la bondad cristiana. Nuestro líder es nuestro salvador. El Papa y el rabino se deben ir. Seremos paganos otra vez\"." },
-            { type: "body", content: "La imagen de Hitler del mundo perfecto era un regreso a un estado de existencia salvaje, en donde \"el poder tiene la razón\". El único obstáculo serio en el camino de Hitler eran los judíos. Hitler sabía que los judíos eran los que llevaban el mensaje de un único Dios – de que todos los hombres son creados por igual, del amor por el prójimo." },
-            { type: "quote", content: "La Providencia ha ordenado que yo sea el libertador más grande de la humanidad. Estoy liberando al hombre de... las sucias y degradantes auto-mortificaciones de una falsa visión conocida como conciencia y moralidad." },
-            { type: "body", content: "El único objetivo real de Hitler eran los judíos, porque ellos eran todo lo que se interponía entre él y el éxito. Mientras los judíos sobrevivieran, Hitler no podría triunfar. Los arraigados conceptos judíos de Dios y moralidad habían tomado el control del mundo." },
+            { type: "body", content: "La imagen de Hitler del mundo perfecto era un regreso a un estado de existencia salvaje, en donde 'el poder tiene la razón'. Hitler dijo: 'En un orden natural, las “clases” son personas que se superponen a otras en estratos, en lugar de vivir como vecinos. A este orden volveremos tan pronto como las repercusiones del liberalismo hayan sido removidas'." },
+            { type: "body", content: "El único obstáculo serio en el camino de Hitler eran los judíos. Hitler sabía que los judíos eran los que llevaban el mensaje de un único Dios – de que todos los hombres son creados por igual, del amor por el prójimo, de ayudar al pobre y al débil." },
+
+            { type: "story", title: "La visión de hitler del mundo", content: [
+                "Hitler odiaba el mensaje de los judíos porque era diametralmente opuesto a su visión de lo que debía ser el mundo. Él dijo:",
+                "'Se refieren a mí como un bárbaro ignorante. Sí, somos bárbaros. Queremos ser bárbaros, es un título honorable para nosotros. Nosotros rejuveneceremos al mundo. Este mundo se acerca a su fin'",
+                "Hitler le dijo a su gente: La Providencia ha ordenado que yo sea el libertador más grande de la humanidad. Estoy liberando al hombre de las limitaciones de una inteligencia que ha asumido el poder, de las sucias y degradantes auto-mortificaciones de una falsa visión conocida como conciencia y moralidad, y de las demandas de una libertad e independencia personal que sólo unos pocos pueden soportar'."
+            ]},
+            { type: "heading", content: "En el alma de todo judío" },
+            { type: "body", content: "El único objetivo real de Hitler eran los judíos, porque ellos eran todo lo que se interponía entre él y el éxito. Mientas los judíos sobrevivieran, Hitler no podría triunfar. Los arraigados conceptos judíos de Dios y moralidad habían tomado el control del mundo, y Hitler sabía que sólo una ideología podría prevalecer, la suya o la de los judíos. El mundo no toleraría ambas." },
             { type: "body", content: "Hitler dijo: \"Los Diez mandamientos han perdido su vitalidad. La conciencia es una invención judía, es un defecto, al igual que la circuncisión\"." },
-            { type: "body", content: "Más aún, Hitler sabía que la amenaza judía estaba en cada judío. Dijo: \"Incluso si un pequeño niño judío sobrevive sin ninguna educación judía, sin sinagoga y sin escuela hebrea, [el judaísmo] está en su alma\"." },
+            { type: "body", content: "Más aún, Hitler sabía que la amenaza judía estaba en cada judío. Dijo: \"Si tan solo un país, por la razón que sea, tolera en él a una familia judía, esa familia se convertirá en el centro de un nuevo alzamiento. Incluso si un pequeño niño judío sobrevive sin ninguna educación judía, sin sinagoga y sin escuela hebrea, [el judaísmo] está en su alma.\"." },
+            { type: "body", content: "El espíritu judío, explicó Hitler, es el producto de la persona judía. Destruir sus lugares sagrados y nada más no sería suficiente. En las palabras de Hitler: \"Incluso si nunca hubiese existido una sinagoga, una escuela judía o el Antiguo Testamento, el espíritu judío todavía existiría y ejercería su influencia. Ha estado allí desde el principio, y no hay ningún judío – ni uno solo – que no lo personifique.\"." },
+
             { type: "body", content: "El odio de Hitler no nació a partir del entendimiento de lo que es el pueblo judío, sino que creció a partir de sus reacciones ante ese entendimiento. Irónicamente, Hitler tuvo un entendimiento más claro de lo que es el pueblo judío que muchos judíos hoy en día." }
         ],
         quiz: [
@@ -396,35 +414,107 @@ const contentData = [
         color: "bg-white",
         icon: <Star className="w-12 h-12 text-yellow-500" />,
         text: [
-            { type: "heading", content: "La perspectiva judía" },
-            { type: "body", content: "Mucho antes de la aparición mundial de cualquier manifestación práctica de antisemitismo, la Torá hizo saber que el antisemitismo jugaría un rol integral en la historia judía." },
-            { type: "body", content: "El Talmud cita el origen del antisemitismo utilizando un juego de palabras: La Torá fue recibida en el Monte Sinaí. La pronunciación hebrea de \"Sinaí\" es casi idéntica a la de \"siná\" (odio)." },
+            { type: "heading", content: "La perspectiva judía del antisemitismo" },
+            { type: "body", content: "Hitler introdujo a la humanidad una tendencia única de antisemitismo. Para el mundo en general este tipo de antisemitismo pareció nuevo, pero para los judíos no tenía nada de revolucionario." },
+            { type: "body", content: "Mucho antes de la aparición mundial de cualquier manifestación práctica de antisemitismo, la Torá hizo saber que el antisemitismo jugaría un rol integral en la historia judía. De hecho, nos dijeron que seríamos odiados exactamente por las razones que Hitler describió tan desvergonzadamente." },
+            { type: "body", content: "El Talmud (Tratado de Shabat 89) cita el origen del antisemitismo utilizando un juego de palabras: La Torá – el origen del sistema judío de leyes, valores y estándares morales – fue recibida en el Monte Sinaí. La pronunciación hebrea de \"Sinaí\" es casi idéntica a la de \"siná\" (odio)." },
             { type: "big-question", content: "SINAÍ ≈ SINÁ (ODIO)" },
             { type: "body", content: "\"¿Por qué la Torá fue entregada en un monte llamado Sinaí?\", pregunta el Talmud. \"Porque la gran siná – el tremendo odio hacia el judío – emana del Sinaí\"." },
             { type: "body", content: "En Sinaí se les dijo a los judíos que hay un Dios, y que Él hace demandas morales. Consecuentemente, en Sinaí la nación judía se convirtió en el objeto de odio para aquellos cuya motivación principal es liberar a la humanidad de las cadenas de la consciencia y la moralidad." },
-            { type: "highlight", content: "Luz para las Naciones" },
             { type: "body", content: "En Sinaí la nación judía fue designada para ser \"una luz entre las naciones\". Hay quienes aceptan esa luz, pero también están los que quieren que el mundo sea un lugar de oscuridad espiritual. Estos heraldos de oscuridad son los que atacan a los judíos por ser los traedores de luz." },
-            { type: "heading", content: "La razón real" },
-            { type: "body", content: "¿Por qué la gente odia este mensaje? Muchísima gente simplemente no puede luchar con la carga de \"ser buenas personas\". Atrapados en este callejón sin salida, arrojan su frustración contra los judíos, quienes personifican la consciencia colectiva." },
-            { type: "quote", content: "Sigmund Freud identificó esta tendencia y explicó: \"Los judíos no son tan odiados porque mataron a Jesús, sino porque lo generaron\"." },
-            { type: "body", content: "En un cierto nivel consciente, la gente reconoce que el mensaje de los judíos es verdadero. Quienes no desean aceptar la verdad han encontrado que la única forma de librarse de ella es destruyendo a los mensajeros – porque el mensaje en sí mismo es demasiado potente para ser anulado." },
-            { type: "heading", content: "Una luz para las naciones" },
-            { type: "body", content: "El profundo mensaje que los judíos traen a la humanidad ha sido aceptado tan globalmente que la gente tiende a darlo por sentado. Sin embargo, las ideas originadas en Sinaí literalmente han cambiado al mundo." },
-            { type: "list", items: [
-                "Derechos humanos básicos",
-                "Cuidado del enfermo y anciano",
-                "Asistencia al pobre",
-                "Igualdad ante la ley",
-                "La paz como ideal"
+            { type: "story", title: "El llamado a Sinaí", content: [
+                "Hermann Rauschning fue el consejero personal de Hitler, pero abandonó el nazismo e intentó alertar al mundo del alcance y el peligro de la amenaza Nazi. Él escribió:",
+                "Es en contra del propio problema irresoluto del ser humano que el tonto y el perverso se sublevan y se suman al antisemitismo. Sin embargo el judaísmo, junto con el helenismo y el cristianismo, son un componente intransferible de nuestra civilización occidental cristiana – el eterno 'llamado a Sinaí' en contra del cual la humanidad se rebela una y otra vez (The Beast From The Abyss, por Hermann Rauschning)."
             ]},
-            { type: "body", content: "En síntesis, los conceptos judíos han civilizado al mundo. John Adams, el segundo presidente de Estados Unidos, escribió: \"Insisto en que los hebreos han hecho más para civilizar al hombre que cualquier otra nación\"." },
-            { type: "heading", content: "La causa es la solución" },
-            { type: "body", content: "El pueblo judío ha sobrevivido porque entendieron el significado de ser judío." },
-            { type: "highlight", content: "Antisemitismo + Ignorancia = Asimilación" },
-            { type: "body", content: "Si entendiéramos por qué los judíos son tan odiados, podríamos entender qué son los judíos. La solución al antisemitismo es exactamente lo mismo que la causa: así como los valores y las creencias judías causan el antisemitismo, asimismo, los valores y las creencias judías finalmente lo eliminarán." },
+            { type: "body", content: "Este 'llamado a Sinaí', el mensaje encomendado y sostenido por los judíos, transforma finalmente al mundo. Sin embargo, es este mismo mensaje lo que provoca la furia de quienes darían hasta sus últimas fuerzas por resistírsele." },
+
+            { type: "heading", content: "La razón real del odio a los judíos" },
+            { type: "body", content: "¿Por qué la gente odia este mensaje, el eterno 'llamado a Sinaí', y odia tanto a quienes lo transmiten? Muchísima gente simplemente no puede luchar con la carga de 'ser buenas personas'. Sin embargo, cuando actúan mal, no pueden enfrentar los sentimientos de culpa resultantes. Por más que lo intenten, nunca se pueden liberar de los estándares de moral absoluta dictados por la Torá. Atrapados en este callejón sin salida, arrojan su pila de frustraciones en contra de los judíos, a quienes perciben como los que personifican la consciencia colectiva humana." },
+            { type: "quote", content: "Sigmund Freud identificó esta tendencia y explicó: \"Los judíos no son tan odiados porque mataron a Jesús, sino porque lo generaron\"." },
+            { type: "body", content: "Hace miles de años, antes de que la Torá fuera entregada, la gente construía su vida alrededor de filosofías que se basaban en su entendimiento propio del bien y del mal. Luego, cuando los judíos entraron en la escena teológica, les mostraron a los pueblos todos los errores que habían cometido:" },
+            { type: "body", content: "Los ídolos paganos son absurdos – sólo hay un solo Dios para toda la humanidad, que es invisible, infinito y perfecto. El infanticidio y el sacrificio humano son inaceptables. Todo ser humano nace con derechos específicos. Nadie puede vivir como le plazca, ya que todos deben subordinar su voluntad a una Autoridad más elevada." },
+            { type: "body", content: "En un cierto nivel consciente, la gente reconoce que el mensaje de los judíos es verdadero. Quienes no desean aceptar la verdad han encontrado que la única forma de librarse de ella es destruyendo a los mensajeros – porque el mensaje en sí mismo es demasiado potente para ser anulado." },
+            { type: "body", content: "Esto es lo molesto de los judíos, y para algunas personas, es el por qué se los debe destruir totalmente. Si el judaísmo fuera tan solo una ideología más, la gente podría reírse de ella y continuar su camino. Pero en lo profundo de su alma, todo ser humano reconoce las verdades esenciales de la moralidad – simplemente no pueden ser pasadas por alto." },
+            { type: "body", content: "Toda afirmación individual de superioridad sólo le molesta a la gente en la medida en que crean que es verdad. Si alguien que es indiscutiblemente feo se encuentra con alguien de apariencia agradable en una fiesta y le dice 'Me veo mejor que tú', ¿cuál sería la respuesta del otro? Lo más probable es que se encoja de hombros y lo ignore, porque el comentario no le molesta en lo más mínimo." },
+            { type: "body", content: "Por otro lado, si el chico más apuesto de la clase se le acerca y hace el mismo comentario, despertará su enojo. La razón es que uno no se resiente por la gente que dice que es superior, sino por la gente que es superior." },
+            { type: "body", content: "Es por esto que el odio de los cristianos a los judíos fue particularmente intenso. Ellos se vieron amenazados por el mensaje judío mucho más que las otras religiones. Los judíos dijeron que Jesús no era Dios. Esta declaración asume que el cristianismo es una falsedad; los Padres de la Iglesia entendieron que si los judíos tenían razón, y seguían siendo judíos, el cristianismo quedaría en la ruina." },
+            { type: "body", content: "Allí yace la gran amenaza del judaísmo al cristianismo. La negación de Jesús por parte de otros grupos es un gran descontento para los cristianos, pero la de los judíos es intolerable. ¡Jesús vino de los judíos! El mismo grupo que lo generó, el pueblo que tuvo el mayor conocimiento y autoridad sobre esos temas, esos que representaron la última palabra en religión – fueron los primeros en rechazar a Jesús." },
+            { type: "body", content: "La amenaza judía al cristianismo no tiene que ver con haber “matado” a Jesús. El origen del temor cristiano es mucho más profundo: la existencia del judaísmo invalida el dogma esencial de la teología cristiana." },
+            { type: "body", content: "¿Cuál es el mensaje que el pueblo judío está trayendo al mundo y tantos encuentran tan amenazante?" },
+
+
+
+
+            { type: "heading", content: "Los judíos: Una luz para las naciones"},
+            { type: "body", content: "El profundo mensaje que los judíos traen a la humanidad ha sido aceptado tan globalmente que la gente tiende a darlo por sentado. Sin embargo, las ideas originadas en Sinaí literalmente han cambiado al mundo." },
+            { type: "body", content: "Poca gente se pone a pensar en el origen de los fundamentos morales básicos de la sociedad occidental. Conceptos como los derechos humanos básicos, la noción de que el enfermo y el anciano deben ser cuidados – no matados y abandonados – y la idea de una sociedad que asiste al pobre y al marginado, todos parecen “venir naturalmente” hoy en día.." },
+
+            { type: "body", content: "En síntesis, los conceptos judíos han civilizado al mundo. Cualquier estudiante serio de historia que se concientizó un poco sobre cómo eran los estándares del mundo antes de la aparición de los judíos puede reconocer con facilidad el enorme impacto que ha tenido el judaísmo." },
+           
+            { type: "heading", content: "¿Cómo ven los historiadores no-judíos a los judíos?" },           
+            { type: "body", content: "Quienes entienden las tendencias filosóficas del mundo previas al advenimiento de la influencia judía pueden identificar con claridad que fueron los judíos quienes hicieron que el mundo abandonara el paganismo y adoptara estándares de justicia y moral." },
+            { type: "body", content: "John Adams, el segundo presidente de Estados Unidos, le escribió a un amigo:" },
+            { type: "quote", content: "Insisto en que los hebreos han hecho más para civilizar al hombre que cualquier otra nación… son la nación más gloriosa que haya habitado esta tierra… Le han dado la religión a tres cuartos del globo y han influenciado en los asuntos de la raza humana más, y más felizmente, que cualquier otra nación, antigua o moderna (Carta de John Adams a Francis Adrian Vanderkemp, 1808, Sociedad Histórica de Pensilvania)." },
+
+            { type: "body", content: "El estudioso e historiador cristiano Paul Johnson escribió en su bestseller, La Historia de los Judíos:" },
+            { type: "quote", content: "Una forma de resumir 4.000 años de historia judía es preguntarnos a nosotros mismos: ¿Qué hubiera pasado con la raza humana si Abraham no hubiese sido un hombre de gran sagacidad, o si se hubiera quedado en Ur guardando sus elevadas nociones para sí y no hubiese aparecido ningún pueblo judío específico? Sin lugar a dudas, el mundo sin los judíos sería un lugar radicalmente diferente. Todos los grandes descubrimientos conceptuales del intelecto parecen obvios e ineludibles una vez que han sido revelados, pero formularlos por primera vez requiere un intelecto especial. Los judíos tuvieron este regalo. A ellos les debemos las ideas de igualdad ante la ley, tanto divina como humana; de la santidad de la vida y la dignidad de la persona; de la consciencia individual y la redención personal; de la consciencia colectiva y la responsabilidad social; de la paz como un ideal abstracto y el amor como el fundamento de la justicia; y muchos otros asuntos que constituyen el mobiliario moral básico de la mente humana." },
+
+            { type: "body", content: "En Ancient and Medieval History (Historia Antigua y Medieval), Hayes y Moon escriben:" },
+            { type: "quote", content: "Sólo si sabes algo sobre los sacrificios humanos, los depravados rituales del templo, las degradantes supersticiones y costumbres que fueron practicadas… puedes darte cuenta cuánto el mundo moderno le debe a los profetas hebreos, cuyo monoteísmo y enseñanzas morales se metieron en el cristianismo y el islamismo…" },
+
+            { type: "body", content: "T. R. Glover resaltó esta misma idea en su libro, El Mundo Antiguo:            " },
+            { type: "quote", content: "La humanidad - occidental y oriental, cristianos y musulmanes - aceptaron la creencia judía de que hay un solo Dios. Hoy en día el politeísmo es tan difícil de entender que es impensable." },
+            { type: "body", content: "La moral y los ideales judíos han ganado una aceptación casi universal. Y con eso, han generado una violenta resistencia al mensaje judío." },
+           
+            { type: "heading", content: "Entendiendo qué es ser judío"},
+            { type: "body", content: "El pueblo judío puede tolerar casi cualquier persecución. Durante toda la historia, el judaísmo ha sobrevivido incontables incidentes abominables de discriminación y persecución. ¿Cuál es el secreto de su persistente fortaleza?" },
+            { type: "body", content: "El filósofo Friedrich Nietzsche dijo una vez: 'Quien tiene un por qué vivir, es capaz de soportar cualquier cómo'. Es decir, si una persona entiende el profundo significado de la experiencia, podrá tolerar cualquier circunstancia de la vida." },
+            { type: "body", content: "A través de los milenios, el pueblo judío sufrió enormes cantidades de odio – conduciendo finalmente al genocidio. Y a pesar de todo, el pueblo judío se ha mantenido judío. ¿Por qué? Porque entendieron que valía la pena. Entendieron el significado de ser judío y estaban dispuestos a pagar el precio." },
+            { type: "body", content: "Si los judíos no hubieran visto ningún significado a su dolor no hubiesen querido mantener su identidad judía. Es por eso que la asimilación está tan difundida hoy en día – muchos judíos no ven por qué deberían 'perderse' la vida y marginarse." },
+
+            { type: "highlight", content: "En otras palabras, antisemitismo + ignorancia = asimilación." },
+
+            { type: "body", content: "Si entendiéramos por qué los judíos son tan odiados, podríamos entender qué son los judíos y, más importante aún, lo que los judíos pueden ser. Se ha hecho un enérgico esfuerzo para remover el elemento judío del antisemitismo y, como consecuencia, se ha ignorado el mensaje crítico que el antisemitismo enseña sobre la singularidad y el especial valor de un judío. Esto es por sí mismo una razón apremiante para que los judíos aprendan sobre antisemitismo y sobre lo que significa ser judío." },
+            { type: "body", content: "Aunque no vivamos en la Alemania nazi donde mataban judíos; vivimos en un mundo que es sutilmente antisemita. Ya sean las condenas de la ONU; el favoritismo mediático en contra de Israel o la violencia contra los judíos en Europa, el odio a los judíos está ahí. Sutil, pero persistente." },
+
+            { type: "story", title: "La metáfora del pelirrojo", content: [
+                "Los judíos conocen muy bien la carga de ser judíos. Sin la belleza y el entendimiento de los beneficios del judaísmo, van a decir, 'Deshagámonos de esto. ¿Quién lo necesita? Quiero librarme de ser judío'.",
+                "Imagina que tienes una hija, y que finalmente llega el día en que comienza el primer grado – unirse al mundo exterior y a la sociedad por primera vez. Al igual que todos los padres jóvenes, estás nervioso. La mandas a la escuela preguntándote: ¿Será aceptada? ¿Encajará? ¿Será sociable y tendrá amigos? etc.",
+                "Al regresar a casa ese día, estás ansioso por escuchar sobre el primer día de tu hija. Pero ves que está deprimida. Preguntas '¿Qué pasó?' Responde, 'Durante el recreo todos los chicos se rieron de mí. Miraban mi cabello rojo y me dijeron Cabeza de Zanahoria. ¡Fue terrible!'.                .",
+                "Estás devastado. Todo el futuro de tu hija, su autoestima, está en peligro. ¿Qué puedes hacer al respecto?",
+                "La solución más fácil a este problema es teñir su cabello. ¡Listo! No más cabello rojo, ahora es castaño. ¡El problema está solucionado!.",
+                "¿Cuál es la solución más difícil? Redefinir la situación. Decirle: 'No importa lo que digan sobre tener cabello rojo, no es malo. ¡Es precioso! ¡Es maravilloso! Es único. Tiene estilo y personalidad. Es extravagante'. Lo redefines. Y ella no tiene más problemas. Porque su problema no era realmente un problema, sino que era un prejuicio de los demás.",
+                "En realidad, ¿Qué es lo peor que le puedes hacer a esta niña? Teñir su pelo. ¿Por qué? Porque estás confirmando sus miedos. Le estás diciendo: 'Ellos tienen razón. En verdad el pelo rojo es malo. Deshagámonos de él'."
+            ]},
+            { type: "body", content: "Esta es nuestra situación. Por un lado, ser judío es como haber nacido pelirrojo. No es popular. Hay personas que nos degradarán por eso." },
+            { type: "body", content: "A menos que cada judío tenga un gran entendimiento de la importancia de ser judío, por definición, no le va a gustar ser judío. No se va a gustar a sí mismo." },
+            { type: "body", content: "¿Cuál es la mejor forma de obtener esta percepción alternativa de lo que es ser judío? Hemos llegado a la comprensión del antisemitismo y su causa." },
+
+
+            { type: "heading", content: "Los judíos: Una luz para las naciones"},
+            { type: "body", content: "La solución al antisemitismo es exactamente lo mismo que la causa: así como los valores y las creencias judías causan el antisemitismo, asimismo, los valores y las creencias judías finalmente lo eliminarán." },
+            { type: "body", content: "El mensaje que los judíos cargan es la receta para conquistar el mal. Cuanto más efectivamente los judíos transmitan su especial mensaje, más cerca estarán de hacer que un holocausto – ya sea en contra de los judíos o de cualquier otro grupo – sea imposible." },
             { type: "body", content: "Sólo cuando los judíos actúen como judíos – cuando el mensaje de ética y moralidad de la Torá sea conocido en todo el mundo – podremos tener la esperanza de vivir en un mundo donde el mal sea erradicado." },
-            { type: "stamp", content: "¿POR QUÉ SER JUDÍO?" },
-            { type: "body", content: "La respuesta a esta pregunta es crítica. Cuando los judíos deben vivir en una sociedad antisemita, deben tener un fuerte sentido íntimo de por qué ser judío es significativo. ¿Cuál es la mejor forma de obtener esta percepción positiva? La respuesta es obvia: con educación judía." }
+            { type: "body", content: "Aquí yace la exquisita ironía de la historia judía. A pesar de que los judíos no presentaron ninguna amenaza militar, política o económica; y que nunca fueron más que una pequeña fracción de la población mundial, siempre fueron un poder principal ante los ojos de la humanidad. ¿Por qué? Por el mensaje que llevan – la Torá." },
+            { type: "body", content: "Las ideas judías influencian el mundo, pero el mundo no podrá absorber el mensaje apropiadamente a menos que los mensajeros – los judíos – lo sepan y lo enseñen." },
+
+            { type: "highlight", content: "En lugar de '¿Por qué los judíos?', la pregunta es: '¿Por qué ser judío?'." },
+
+            { type: "body", content: "La respuesta a esta pregunta es crítica para ti, para el pueblo judío, y finalmente, para el mundo. Cuando los judíos deben vivir en una sociedad antisemita, dentro del contexto de un pasado lleno de antisemitismo, deben tener un fuerte sentido íntimo de por qué ser judío es significativo y valedero; y de por qué vale la pena el esfuerzo." },
+            { type: "body", content: "¿Cuál es la mejor forma de obtener una percepción positiva y optimista sobre ser judío?" },
+
+
+
+
+
+
+
+
+
+           
+           
+           
+            { type: "stamp", content: "La respuesta es obvia: con educación judía." },
         ],
         quiz: [
             {
