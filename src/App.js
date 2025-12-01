@@ -67,7 +67,7 @@ const styles = `
 const contentData = [
     {
         id: 1,
-        title: "¿Por qué los judíos?",
+        title: "¿Por qué los judíos v2?",
         subtitle: "PARTE 1",
         color: "bg-pop-yellow",
         icon: <Eye className="w-12 h-12" />,
